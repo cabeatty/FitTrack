@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e28fe423-7ed4-44c0-9599-5d141ec91743" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jFrame/Utilities/fieldChecks.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jFrame/main/Water/addDrink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jFrame/main/Water/addDrink.jfd" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/Utilities/changed.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/Utilities/changed.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.class" />
@@ -20,11 +15,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.jfd" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.jfd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.jfd" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.jfd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java" afterPath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd" afterPath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/login/login.java" afterPath="$PROJECT_DIR$/src/jFrame/login/login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/main/Display.java" afterPath="$PROJECT_DIR$/src/jFrame/main/Display.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/main/Display.jfd" afterPath="$PROJECT_DIR$/src/jFrame/main/Display.jfd" />
     </list>
     <ignored path="FitTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -944,7 +934,7 @@
       <workItem from="1478540122094" duration="54000" />
       <workItem from="1478550607879" duration="11436000" />
       <workItem from="1478655774774" duration="108000" />
-      <workItem from="1478655894928" duration="5090000" />
+      <workItem from="1478655894928" duration="5160000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;">
       <created>1478656119355</created>
@@ -953,11 +943,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478656119355</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added drink tab and functionality to add drink button, as well as fixed fieldChecks function">
+      <created>1478661045302</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478661045302</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21054000" />
+    <option name="totallyTimeSpent" value="21124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1039,7 +1036,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;" />
+    <MESSAGE value="added drink tab and functionality to add drink button, as well as fixed fieldChecks function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added drink tab and functionality to add drink button, as well as fixed fieldChecks function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
