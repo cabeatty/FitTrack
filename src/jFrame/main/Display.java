@@ -102,7 +102,7 @@ public class Display extends JFrame
 				});
 
 				//---- iconLabel ----
-				iconLabel.setIcon(new ImageIcon("/home/colin/Documents/CSE 337/FitTrack/src/resources/man2.png"));
+				iconLabel.setIcon(new ImageIcon(getClass().getResource("/resources/man2.png")));
 
 				GroupLayout homePanelLayout = new GroupLayout(homePanel);
 				homePanel.setLayout(homePanelLayout);
@@ -115,9 +115,9 @@ public class Display extends JFrame
 									.addGroup(homePanelLayout.createParallelGroup()
 										.addComponent(homeLabel)
 										.addComponent(homeSubLabel))
-									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE))
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 300, Short.MAX_VALUE))
 								.addGroup(homePanelLayout.createSequentialGroup()
-									.addContainerGap(27, Short.MAX_VALUE)
+									.addContainerGap(282, Short.MAX_VALUE)
 									.addComponent(loginButton)
 									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 									.addComponent(createAccButton)
@@ -132,12 +132,12 @@ public class Display extends JFrame
 							.addComponent(homeLabel)
 							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 							.addComponent(homeSubLabel)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 154, Short.MAX_VALUE)
 							.addGroup(homePanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 								.addComponent(loginButton)
 								.addComponent(createAccButton))
 							.addGap(28, 28, 28))
-						.addComponent(iconLabel, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
+						.addComponent(iconLabel, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 334, Short.MAX_VALUE)
 				);
 			}
 			tabbedPane1.addTab("Home", homePanel);
@@ -149,11 +149,11 @@ public class Display extends JFrame
 				exersizePanel.setLayout(exersizePanelLayout);
 				exersizePanelLayout.setHorizontalGroup(
 					exersizePanelLayout.createParallelGroup()
-						.addGap(0, 541, Short.MAX_VALUE)
+						.addGap(0, 537, Short.MAX_VALUE)
 				);
 				exersizePanelLayout.setVerticalGroup(
 					exersizePanelLayout.createParallelGroup()
-						.addGap(0, 343, Short.MAX_VALUE)
+						.addGap(0, 334, Short.MAX_VALUE)
 				);
 			}
 			tabbedPane1.addTab("Exersize", exersizePanel);
@@ -165,11 +165,11 @@ public class Display extends JFrame
 				caloriePanel.setLayout(caloriePanelLayout);
 				caloriePanelLayout.setHorizontalGroup(
 					caloriePanelLayout.createParallelGroup()
-						.addGap(0, 541, Short.MAX_VALUE)
+						.addGap(0, 537, Short.MAX_VALUE)
 				);
 				caloriePanelLayout.setVerticalGroup(
 					caloriePanelLayout.createParallelGroup()
-						.addGap(0, 343, Short.MAX_VALUE)
+						.addGap(0, 334, Short.MAX_VALUE)
 				);
 			}
 			tabbedPane1.addTab("Calories", caloriePanel);
@@ -181,11 +181,11 @@ public class Display extends JFrame
 				sleepPanel.setLayout(sleepPanelLayout);
 				sleepPanelLayout.setHorizontalGroup(
 					sleepPanelLayout.createParallelGroup()
-						.addGap(0, 541, Short.MAX_VALUE)
+						.addGap(0, 537, Short.MAX_VALUE)
 				);
 				sleepPanelLayout.setVerticalGroup(
 					sleepPanelLayout.createParallelGroup()
-						.addGap(0, 343, Short.MAX_VALUE)
+						.addGap(0, 334, Short.MAX_VALUE)
 				);
 			}
 			tabbedPane1.addTab("Sleep", sleepPanel);
@@ -197,11 +197,11 @@ public class Display extends JFrame
 				waterPanel.setLayout(waterPanelLayout);
 				waterPanelLayout.setHorizontalGroup(
 					waterPanelLayout.createParallelGroup()
-						.addGap(0, 541, Short.MAX_VALUE)
+						.addGap(0, 537, Short.MAX_VALUE)
 				);
 				waterPanelLayout.setVerticalGroup(
 					waterPanelLayout.createParallelGroup()
-						.addGap(0, 343, Short.MAX_VALUE)
+						.addGap(0, 334, Short.MAX_VALUE)
 				);
 			}
 			tabbedPane1.addTab("Water", waterPanel);

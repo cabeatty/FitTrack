@@ -1,4 +1,4 @@
-JFDML JFormDesigner: "5.2.4.1.329" Java: "1.8.0_112-release" encoding: "UTF-8"
+JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112-release" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
@@ -11,8 +11,8 @@ new FormModel {
 			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
 				name: "tabbedPane1"
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq {par l {seq l {space :p:22:p, par l {comp homeLabel::l:p::p, comp homeSubLabel::l:p::p}, space ::60:x}, seq {space ::27:x, comp loginButton:::p::p, space :::p, comp createAccButton:::p::p, space :p:41:p}}, comp iconLabel:::p::p, space :p:28:p}}"
-					"$verticalGroup": "par l {seq l {space :p:29:p, comp homeLabel:::p::p, space :::p, comp homeSubLabel:::p::p, space ::171:x, par b {comp loginButton::b:p::p, comp createAccButton::b:p::p}, space :p:28:p}, comp iconLabel::t::343:x}"
+					"$horizontalGroup": "par l {seq {par l {seq l {space :p:22:p, par l {comp homeLabel::l:p::p, comp homeSubLabel::l:p::p}, space ::300:x}, seq {space ::282:x, comp loginButton:::p::p, space :::p, comp createAccButton:::p::p, space :p:41:p}}, comp iconLabel:::p::p, space :p:28:p}}"
+					"$verticalGroup": "par l {seq l {space :p:29:p, comp homeLabel:::p::p, space :::p, comp homeSubLabel:::p::p, space ::154:x, par b {comp loginButton::b:p::p, comp createAccButton::b:p::p}, space :p:28:p}, comp iconLabel::t::334:x}"
 				} ) {
 					name: "homePanel"
 					add( new FormComponent( "javax.swing.JLabel" ) {
@@ -37,38 +37,38 @@ new FormModel {
 					} )
 					add( new FormComponent( "javax.swing.JLabel" ) {
 						name: "iconLabel"
-						"icon": new com.jformdesigner.model.SwingIcon( 1, "/home/colin/Documents/CSE 337/FitTrack/src/resources/man2.png" )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/resources/man2.png" )
 					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Home"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {space :0:541:x}"
-					"$verticalGroup": "par l {space :0:343:x}"
+					"$horizontalGroup": "par l {space :0:537:x}"
+					"$verticalGroup": "par l {space :0:334:x}"
 				} ) {
 					name: "exersizePanel"
 				}, new FormLayoutConstraints( null ) {
 					"title": "Exersize"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {space :0:541:x}"
-					"$verticalGroup": "par l {space :0:343:x}"
+					"$horizontalGroup": "par l {space :0:537:x}"
+					"$verticalGroup": "par l {space :0:334:x}"
 				} ) {
 					name: "caloriePanel"
 				}, new FormLayoutConstraints( null ) {
 					"title": "Calories"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {space :0:541:x}"
-					"$verticalGroup": "par l {space :0:343:x}"
+					"$horizontalGroup": "par l {space :0:537:x}"
+					"$verticalGroup": "par l {space :0:334:x}"
 				} ) {
 					name: "sleepPanel"
 				}, new FormLayoutConstraints( null ) {
 					"title": "Sleep"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {space :0:541:x}"
-					"$verticalGroup": "par l {space :0:343:x}"
+					"$horizontalGroup": "par l {space :0:537:x}"
+					"$verticalGroup": "par l {space :0:334:x}"
 				} ) {
 					name: "waterPanel"
 				}, new FormLayoutConstraints( null ) {
@@ -76,7 +76,7 @@ new FormModel {
 				} )
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 0, 0 )
+			"location": new java.awt.Point( 270, 160 )
 			"size": new java.awt.Dimension( 555, 395 )
 		} )
 	}
