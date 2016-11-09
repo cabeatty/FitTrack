@@ -72,38 +72,41 @@ public class addDrink extends JFrame
 		});
 
 		//---- descLabel ----
-		descLabel.setText("Type in ammount drank in ml and click Add");
+		descLabel.setText("Enter number of oz");
 		descLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 14));
 
 		GroupLayout contentPaneLayout = new GroupLayout(contentPane);
 		contentPane.setLayout(contentPaneLayout);
 		contentPaneLayout.setHorizontalGroup(
 			contentPaneLayout.createParallelGroup()
-				.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
+				.addGroup(contentPaneLayout.createSequentialGroup()
 					.addContainerGap()
 					.addGroup(contentPaneLayout.createParallelGroup()
 						.addGroup(contentPaneLayout.createSequentialGroup()
-							.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
-								.addComponent(inputField, GroupLayout.Alignment.LEADING)
-								.addComponent(descLabel, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-							.addContainerGap(9, Short.MAX_VALUE))
+							.addGroup(contentPaneLayout.createParallelGroup()
+								.addGroup(contentPaneLayout.createSequentialGroup()
+									.addComponent(descLabel)
+									.addGap(0, 0, Short.MAX_VALUE))
+								.addGroup(contentPaneLayout.createSequentialGroup()
+									.addComponent(addButton)
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+									.addComponent(cancelButton)))
+							.addContainerGap())
 						.addGroup(contentPaneLayout.createSequentialGroup()
-							.addComponent(addButton)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 163, Short.MAX_VALUE)
-							.addComponent(cancelButton)
-							.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+							.addComponent(inputField, GroupLayout.PREFERRED_SIZE, 171, GroupLayout.PREFERRED_SIZE)
+							.addGap(0, 6, Short.MAX_VALUE))))
 		);
 		contentPaneLayout.setVerticalGroup(
 			contentPaneLayout.createParallelGroup()
 				.addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
 					.addContainerGap()
 					.addComponent(descLabel)
-					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
 					.addComponent(inputField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-						.addComponent(addButton)
-						.addComponent(cancelButton))
+						.addComponent(cancelButton)
+						.addComponent(addButton))
 					.addContainerGap())
 		);
 		pack();

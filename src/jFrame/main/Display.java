@@ -7,6 +7,9 @@ package jFrame.main;
 import jFrame.createAcc.createAcc;
 import jFrame.login.login;
 import FitTrack.Components.User;
+import jFrame.main.Calories.addMeal;
+import jFrame.main.Exersize.addWorkout;
+import jFrame.main.Sleep.addSleep;
 import jFrame.main.Water.addDrink;
 
 import java.awt.*;
@@ -50,6 +53,29 @@ public class Display extends JFrame
 		drink.setResizable(false);
 	}
 
+	private void addWorkoutButtonMouseReleased(MouseEvent e)
+	{
+		addWorkout wout = new addWorkout();
+		wout.setVisible(true);
+		wout.setResizable(false);
+	}
+
+
+	private void addSleepButtonMouseReleased(MouseEvent e)
+	{
+		addSleep sw = new addSleep();
+		sw.setVisible(true);
+		sw.setResizable(false);
+	}
+
+	private void addMealButtonMouseReleased(MouseEvent e)
+	{
+		addMeal mw = new addMeal();
+		mw.setVisible(true);
+		mw.setResizable(false);
+
+	}
+
 	private void initComponents()
 	{
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
@@ -61,9 +87,13 @@ public class Display extends JFrame
 		loginButton = new JButton();
 		createAccButton = new JButton();
 		iconLabel = new JLabel();
+		logoutButton = new JButton();
 		exersizePanel = new JPanel();
+		addWorkoutButton = new JButton();
 		caloriePanel = new JPanel();
+		addMealButton = new JButton();
 		sleepPanel = new JPanel();
+		addSleepButton = new JButton();
 		waterPanel = new JPanel();
 		addDrinkButton = new JButton();
 		ammountDrankLabel = new JLabel();
@@ -120,6 +150,9 @@ public class Display extends JFrame
 				//---- iconLabel ----
 				iconLabel.setIcon(new ImageIcon(getClass().getResource("/resources/man2.png")));
 
+				//---- logoutButton ----
+				logoutButton.setText("Logout");
+
 				GroupLayout homePanelLayout = new GroupLayout(homePanel);
 				homePanel.setLayout(homePanelLayout);
 				homePanelLayout.setHorizontalGroup(
@@ -133,23 +166,32 @@ public class Display extends JFrame
 									.addComponent(loginButton)
 									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 									.addComponent(createAccButton)))
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-							.addComponent(iconLabel)
-							.addGap(28, 28, 28))
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+							.addGroup(homePanelLayout.createParallelGroup()
+								.addComponent(iconLabel, GroupLayout.Alignment.TRAILING)
+								.addComponent(logoutButton, GroupLayout.Alignment.TRAILING))
+							.addGap(29, 29, 29))
 				);
 				homePanelLayout.setVerticalGroup(
 					homePanelLayout.createParallelGroup()
 						.addGroup(homePanelLayout.createSequentialGroup()
-							.addGap(29, 29, 29)
-							.addComponent(homeLabel)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-							.addComponent(homeSubLabel)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 154, Short.MAX_VALUE)
-							.addGroup(homePanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-								.addComponent(loginButton)
-								.addComponent(createAccButton))
-							.addGap(28, 28, 28))
-						.addComponent(iconLabel, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 334, Short.MAX_VALUE)
+							.addGroup(homePanelLayout.createParallelGroup()
+								.addGroup(homePanelLayout.createSequentialGroup()
+									.addGap(29, 29, 29)
+									.addComponent(homeLabel)
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+									.addComponent(homeSubLabel)
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 193, Short.MAX_VALUE))
+								.addGroup(GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
+									.addContainerGap(11, Short.MAX_VALUE)
+									.addComponent(iconLabel, GroupLayout.PREFERRED_SIZE, 288, GroupLayout.PREFERRED_SIZE)
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)))
+							.addGroup(homePanelLayout.createParallelGroup()
+								.addGroup(homePanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+									.addComponent(loginButton)
+									.addComponent(createAccButton))
+								.addComponent(logoutButton))
+							.addContainerGap())
 				);
 			}
 			tabbedPane1.addTab("Home", homePanel);
@@ -157,15 +199,30 @@ public class Display extends JFrame
 			//======== exersizePanel ========
 			{
 
+				//---- addWorkoutButton ----
+				addWorkoutButton.setText("Add Workout");
+				addWorkoutButton.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						addWorkoutButtonMouseReleased(e);
+					}
+				});
+
 				GroupLayout exersizePanelLayout = new GroupLayout(exersizePanel);
 				exersizePanel.setLayout(exersizePanelLayout);
 				exersizePanelLayout.setHorizontalGroup(
 					exersizePanelLayout.createParallelGroup()
-						.addGap(0, 537, Short.MAX_VALUE)
+						.addGroup(exersizePanelLayout.createSequentialGroup()
+							.addContainerGap()
+							.addComponent(addWorkoutButton)
+							.addContainerGap(425, Short.MAX_VALUE))
 				);
 				exersizePanelLayout.setVerticalGroup(
 					exersizePanelLayout.createParallelGroup()
-						.addGap(0, 334, Short.MAX_VALUE)
+						.addGroup(exersizePanelLayout.createSequentialGroup()
+							.addContainerGap(305, Short.MAX_VALUE)
+							.addComponent(addWorkoutButton)
+							.addContainerGap())
 				);
 			}
 			tabbedPane1.addTab("Exersize", exersizePanel);
@@ -173,15 +230,30 @@ public class Display extends JFrame
 			//======== caloriePanel ========
 			{
 
+				//---- addMealButton ----
+				addMealButton.setText("Add Meal");
+				addMealButton.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						addMealButtonMouseReleased(e);
+					}
+				});
+
 				GroupLayout caloriePanelLayout = new GroupLayout(caloriePanel);
 				caloriePanel.setLayout(caloriePanelLayout);
 				caloriePanelLayout.setHorizontalGroup(
 					caloriePanelLayout.createParallelGroup()
-						.addGap(0, 537, Short.MAX_VALUE)
+						.addGroup(caloriePanelLayout.createSequentialGroup()
+							.addContainerGap()
+							.addComponent(addMealButton)
+							.addContainerGap(448, Short.MAX_VALUE))
 				);
 				caloriePanelLayout.setVerticalGroup(
 					caloriePanelLayout.createParallelGroup()
-						.addGap(0, 334, Short.MAX_VALUE)
+						.addGroup(GroupLayout.Alignment.TRAILING, caloriePanelLayout.createSequentialGroup()
+							.addContainerGap(305, Short.MAX_VALUE)
+							.addComponent(addMealButton)
+							.addContainerGap())
 				);
 			}
 			tabbedPane1.addTab("Calories", caloriePanel);
@@ -189,15 +261,30 @@ public class Display extends JFrame
 			//======== sleepPanel ========
 			{
 
+				//---- addSleepButton ----
+				addSleepButton.setText("Add Sleep");
+				addSleepButton.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						addSleepButtonMouseReleased(e);
+					}
+				});
+
 				GroupLayout sleepPanelLayout = new GroupLayout(sleepPanel);
 				sleepPanel.setLayout(sleepPanelLayout);
 				sleepPanelLayout.setHorizontalGroup(
 					sleepPanelLayout.createParallelGroup()
-						.addGap(0, 537, Short.MAX_VALUE)
+						.addGroup(sleepPanelLayout.createSequentialGroup()
+							.addContainerGap()
+							.addComponent(addSleepButton)
+							.addContainerGap(444, Short.MAX_VALUE))
 				);
 				sleepPanelLayout.setVerticalGroup(
 					sleepPanelLayout.createParallelGroup()
-						.addGap(0, 334, Short.MAX_VALUE)
+						.addGroup(GroupLayout.Alignment.TRAILING, sleepPanelLayout.createSequentialGroup()
+							.addContainerGap(305, Short.MAX_VALUE)
+							.addComponent(addSleepButton)
+							.addContainerGap())
 				);
 			}
 			tabbedPane1.addTab("Sleep", sleepPanel);
@@ -256,7 +343,7 @@ public class Display extends JFrame
 										.addGroup(GroupLayout.Alignment.TRAILING, waterPanelLayout.createSequentialGroup()
 											.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 											.addComponent(leftField, GroupLayout.PREFERRED_SIZE, 156, GroupLayout.PREFERRED_SIZE)))))
-							.addContainerGap(110, Short.MAX_VALUE))
+							.addContainerGap(96, Short.MAX_VALUE))
 				);
 				waterPanelLayout.setVerticalGroup(
 					waterPanelLayout.createParallelGroup()
@@ -275,7 +362,7 @@ public class Display extends JFrame
 								.addComponent(leftField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 							.addGap(18, 18, 18)
 							.addComponent(addDrinkButton)
-							.addContainerGap(98, Short.MAX_VALUE))
+							.addContainerGap(115, Short.MAX_VALUE))
 				);
 			}
 			tabbedPane1.addTab("Water", waterPanel);
@@ -305,9 +392,13 @@ public class Display extends JFrame
 	private JButton loginButton;
 	private JButton createAccButton;
 	private JLabel iconLabel;
+	private JButton logoutButton;
 	private JPanel exersizePanel;
+	private JButton addWorkoutButton;
 	private JPanel caloriePanel;
+	private JButton addMealButton;
 	private JPanel sleepPanel;
+	private JButton addSleepButton;
 	private JPanel waterPanel;
 	private JButton addDrinkButton;
 	private JLabel ammountDrankLabel;

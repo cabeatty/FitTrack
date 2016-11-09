@@ -5,4 +5,18 @@ package FitTrack.Components;
  */
 public class waterIntakeTracker
 {
+	public static void addDrink(int drink)
+	{
+
+	}
+
+	public static int getTotal()
+	{
+		return 64;
+	}
+
+	public static int getRemaining()
+	{
+		return 0;
+	}
 }

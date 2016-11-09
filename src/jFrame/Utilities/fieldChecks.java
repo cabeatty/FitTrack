@@ -38,4 +38,16 @@ public class fieldChecks
 
 		return false;
 	}
+
+	public static boolean boxSelected( JComboBox[] boxes )
+	{
+		for (JComboBox box : boxes)
+		{
+			if (box.getSelectedItem().toString().equals(" ") )
+			{
+				return false;
+			}
+		}
+		return true;
+	}
 }

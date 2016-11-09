@@ -1,11 +1,11 @@
-JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112-release" encoding: "UTF-8"
+JFDML JFormDesigner: "5.2.4.1.329" Java: "1.8.0_112-release" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq t {space :::p, par l {seq l {par t:::p {comp inputField::l:::x, comp descLabel::l:::x}, space ::9:x}, seq l {comp addButton:::p::p, space ::163:x, comp cancelButton:::p::p, space :::x}}}}"
-			"$verticalGroup": "par l {seq t {space :::p, comp descLabel:::p::p, space :::p, comp inputField:::p::p, space ::12:x, par b {comp addButton::b:p::p, comp cancelButton::b:p::p}, space :::p}}"
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq l {par l {seq {comp descLabel:::p::p, space :0:0:x}, seq l {comp addButton:::p::p, space ::47:x, comp cancelButton:::p::p}}, space :::p}, seq l {comp inputField:::p:171:p, space :0:6:x}}}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp descLabel:::p::p, space ::17:x, comp inputField:::p::p, space u:::p, par b {comp cancelButton::b:p::p, comp addButton::b:p::p}, space :::p}}"
 		} ) {
 			name: "this"
 			"title": "Add Drink"
@@ -21,15 +21,15 @@ new FormModel {
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "descLabel"
-				"text": "Type in ammount drank in ml and click Add"
+				"text": "Enter number of oz"
 				"font": new java.awt.Font( "Segoe UI Semibold", 0, 14 )
 			} )
 			add( new FormComponent( "javax.swing.JTextField" ) {
 				name: "inputField"
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 385, 205 )
-			"size": new java.awt.Dimension( 305, 140 )
+			"location": new java.awt.Point( 135, 120 )
+			"size": new java.awt.Dimension( 195, 140 )
 		} )
 	}
 }
