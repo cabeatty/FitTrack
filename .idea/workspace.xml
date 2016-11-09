@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e28fe423-7ed4-44c0-9599-5d141ec91743" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jFrame/Utilities/fieldChecks.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jFrame/main/Water/addDrink.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jFrame/main/Water/addDrink.jfd" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/Utilities/changed.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/Utilities/changed.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$3.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.jfd" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.jfd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.jfd" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.jfd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java" afterPath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd" afterPath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/login/login.java" afterPath="$PROJECT_DIR$/src/jFrame/login/login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/main/Display.java" afterPath="$PROJECT_DIR$/src/jFrame/main/Display.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/main/Display.jfd" afterPath="$PROJECT_DIR$/src/jFrame/main/Display.jfd" />
     </list>
@@ -29,8 +49,18 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
+            <state relative-caret-position="851">
               <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fieldChecks.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jFrame/Utilities/fieldChecks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -49,23 +79,10 @@
       <file leaf-file-name="createAcc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="-1275">
+              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
               <folding>
-                <marker date="1478655586010" expanded="false" signature="350:10576" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <marker date="1478656037961" expanded="false" signature="874:7047" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1478656037961" expanded="false" signature="7053:7596" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                <marker date="1478658309709" expanded="true" signature="354:9740" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
               </folding>
             </state>
           </provider>
@@ -74,18 +91,58 @@
       <file leaf-file-name="login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jFrame/login/login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            <state relative-caret-position="336">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding>
-                <marker date="1478655586019" expanded="false" signature="826:3627" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1478655586019" expanded="false" signature="3633:4035" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                <marker date="1478658851734" expanded="false" signature="963:3764" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1478658851734" expanded="false" signature="3770:4172" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Display.jfd" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+              <folding>
+                <marker date="1478660926350" expanded="true" signature="1062:10185" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1478660926350" expanded="true" signature="10191:10950" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Display.jfd" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.jfd">
+          <provider selected="true" editor-type-id="JFormDesigner">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addDrink.jfd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jFrame/main/Water/addDrink.jfd">
+          <provider selected="true" editor-type-id="JFormDesigner">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addDrink.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jFrame/main/Water/addDrink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+              <folding>
+                <marker date="1478660855158" expanded="false" signature="785:3569" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1478660855158" expanded="false" signature="3575:3910" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createAcc.jfd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd">
           <provider selected="true" editor-type-id="JFormDesigner">
             <state />
           </provider>
@@ -123,13 +180,16 @@
         <option value="$PROJECT_DIR$/src/jFrame/Display.jfd" />
         <option value="$PROJECT_DIR$/src/jFrame/Display.java" />
         <option value="$PROJECT_DIR$/src/jFrame/login/login.jfd" />
-        <option value="$PROJECT_DIR$/src/jFrame/main/Display.java" />
-        <option value="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd" />
         <option value="$PROJECT_DIR$/src/FitTrack/Components/User.java" />
         <option value="$PROJECT_DIR$/src/jFrame/Utilities/changed.java" />
-        <option value="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java" />
+        <option value="$PROJECT_DIR$/src/jFrame/Utilities/fieldChecks.java" />
+        <option value="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd" />
         <option value="$PROJECT_DIR$/src/jFrame/login/login.java" />
+        <option value="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java" />
         <option value="$PROJECT_DIR$/src/jFrame/main/Display.jfd" />
+        <option value="$PROJECT_DIR$/src/jFrame/main/Water/addDrink.jfd" />
+        <option value="$PROJECT_DIR$/src/jFrame/main/Water/addDrink.java" />
+        <option value="$PROJECT_DIR$/src/jFrame/main/Display.java" />
       </list>
     </option>
   </component>
@@ -271,6 +331,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Water" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jFrame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -345,6 +431,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CSE 280/client_player" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -856,12 +944,20 @@
       <workItem from="1478540122094" duration="54000" />
       <workItem from="1478550607879" duration="11436000" />
       <workItem from="1478655774774" duration="108000" />
-      <workItem from="1478655894928" duration="144000" />
+      <workItem from="1478655894928" duration="5090000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;">
+      <created>1478656119355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478656119355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16108000" />
+    <option name="totallyTimeSpent" value="21054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -878,12 +974,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15031983" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36753446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15031983" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -898,7 +995,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -941,6 +1037,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -971,7 +1071,7 @@
         <state relative-caret-position="1003">
           <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
-            <marker date="1478655586010" expanded="false" signature="350:10576" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478658309709" expanded="true" signature="354:9740" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -981,8 +1081,8 @@
         <state relative-caret-position="238">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <marker date="1478656037961" expanded="false" signature="874:7047" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1478656037961" expanded="false" signature="7053:7596" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478660926350" expanded="true" signature="1062:10185" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1478660926350" expanded="true" signature="10191:10950" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -992,8 +1092,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478655586019" expanded="false" signature="826:3627" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1478655586019" expanded="false" signature="3633:4035" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478658851734" expanded="false" signature="963:3764" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1478658851734" expanded="false" signature="3770:4172" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -1024,7 +1124,7 @@
         <state relative-caret-position="1003">
           <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
-            <marker date="1478655586010" expanded="false" signature="350:10576" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478658309709" expanded="true" signature="354:9740" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -1034,8 +1134,8 @@
         <state relative-caret-position="238">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <marker date="1478656037961" expanded="false" signature="874:7047" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1478656037961" expanded="false" signature="7053:7596" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478660926350" expanded="true" signature="1062:10185" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1478660926350" expanded="true" signature="10191:10950" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -1045,8 +1145,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478655586019" expanded="false" signature="826:3627" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1478655586019" expanded="false" signature="3633:4035" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478658851734" expanded="false" signature="963:3764" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1478658851734" expanded="false" signature="3770:4172" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -1180,24 +1280,31 @@
     <entry file="file://$PROJECT_DIR$/src/jFrame/main.java" />
     <entry file="file://$PROJECT_DIR$/src/jFrame/login/login.jfd" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Integer.java" />
-    <entry file="file://$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
+        <state relative-caret-position="851">
           <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.java">
+    <entry file="file://$PROJECT_DIR$/src/jFrame/login/login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="336">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
-            <marker date="1478656037961" expanded="false" signature="874:7047" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1478656037961" expanded="false" signature="7053:7596" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478658851734" expanded="false" signature="963:3764" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1478658851734" expanded="false" signature="3770:4172" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jFrame/Utilities/fieldChecks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,33 +1316,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jFrame/Utilities/changed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="-1275">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
           <folding>
-            <marker date="1478655586010" expanded="false" signature="350:10576" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478658309709" expanded="true" signature="354:9740" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jFrame/login/login.java">
+    <entry file="file://$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jFrame/main/Water/addDrink.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        <state relative-caret-position="455">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding>
-            <marker date="1478655586019" expanded="false" signature="826:3627" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1478655586019" expanded="false" signature="3633:4035" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1478660855158" expanded="false" signature="785:3569" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1478660855158" expanded="false" signature="3575:3910" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jFrame/main/Water/addDrink.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.jfd">
@@ -1246,6 +1355,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <marker date="1478660926350" expanded="true" signature="1062:10185" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1478660926350" expanded="true" signature="10191:10950" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
         </state>
       </provider>
     </entry>

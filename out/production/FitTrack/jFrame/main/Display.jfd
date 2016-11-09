@@ -1,4 +1,4 @@
-JFDML JFormDesigner: "5.2.4.1.329" Java: "1.8.0_112-release" encoding: "UTF-8"
+JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112-release" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
@@ -8,11 +8,12 @@ new FormModel {
 			"$verticalGroup": "par l {comp tabbedPane1::l:::x}"
 		} ) {
 			name: "this"
+			"title": "FitTrack"
 			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
 				name: "tabbedPane1"
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq {par l {seq l {space :p:22:p, par l {comp homeLabel::l:p::p, comp homeSubLabel::l:p::p}, space ::60:x}, seq {space ::27:x, comp loginButton:::p::p, space :::p, comp createAccButton:::p::p, space :p:41:p}}, comp iconLabel:::p::p, space :p:28:p}}"
-					"$verticalGroup": "par l {seq l {space :p:29:p, comp homeLabel:::p::p, space :::p, comp homeSubLabel:::p::p, space ::171:x, par b {comp loginButton::b:p::p, comp createAccButton::b:p::p}, space :p:28:p}, comp iconLabel::t::343:x}"
+					"$horizontalGroup": "par l {seq {space :p:22:p, par l {comp homeLabel::l:p::p, comp homeSubLabel::l:p::p, seq {comp loginButton:::p::p, space :::p, comp createAccButton:::p::p}}, space ::60:x, comp iconLabel:::p::p, space :p:28:p}}"
+					"$verticalGroup": "par l {seq l {space :p:29:p, comp homeLabel:::p::p, space :::p, comp homeSubLabel:::p::p, space ::154:x, par b {comp loginButton::b:p::p, comp createAccButton::b:p::p}, space :p:28:p}, comp iconLabel::t::334:x}"
 				} ) {
 					name: "homePanel"
 					add( new FormComponent( "javax.swing.JLabel" ) {
@@ -37,46 +38,78 @@ new FormModel {
 					} )
 					add( new FormComponent( "javax.swing.JLabel" ) {
 						name: "iconLabel"
-						"icon": new com.jformdesigner.model.SwingIcon( 1, "/home/colin/Documents/CSE 337/FitTrack/src/resources/man2.png" )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/resources/man2.png" )
 					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Home"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {space :0:541:x}"
-					"$verticalGroup": "par l {space :0:343:x}"
+					"$horizontalGroup": "par l {space :0:537:x}"
+					"$verticalGroup": "par l {space :0:334:x}"
 				} ) {
 					name: "exersizePanel"
 				}, new FormLayoutConstraints( null ) {
 					"title": "Exersize"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {space :0:541:x}"
-					"$verticalGroup": "par l {space :0:343:x}"
+					"$horizontalGroup": "par l {space :0:537:x}"
+					"$verticalGroup": "par l {space :0:334:x}"
 				} ) {
 					name: "caloriePanel"
 				}, new FormLayoutConstraints( null ) {
 					"title": "Calories"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {space :0:541:x}"
-					"$verticalGroup": "par l {space :0:343:x}"
+					"$horizontalGroup": "par l {space :0:537:x}"
+					"$verticalGroup": "par l {space :0:334:x}"
 				} ) {
 					name: "sleepPanel"
 				}, new FormLayoutConstraints( null ) {
 					"title": "Sleep"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {space :0:541:x}"
-					"$verticalGroup": "par l {space :0:343:x}"
+					"$horizontalGroup": "par l {seq l {space :p:56:p, par t {comp goalField:::p:156:p, seq {par t {comp addDrinkButton:::p::p, comp leftLabel::t:p::p, comp goalLabel::t:p::p, comp ammountDrankLabel:::p::p}, par l {seq {space :p:40:p, comp drankFeild:::p:156:p}, seq t {space :::p, comp leftField:::p:156:p}}}}, space ::110:x}}"
+					"$verticalGroup": "par l {seq t {space :p:64:p, par b {comp ammountDrankLabel::b:p::p, comp drankFeild::b:p::p}, space s:::p, par b {comp goalLabel::b:p::p, comp goalField::b:p::p}, space s:::p, par b {comp leftLabel::b:p::p, comp leftField::b:p::p}, space s:::p, comp addDrinkButton:::p::p, space ::98:x}}"
 				} ) {
 					name: "waterPanel"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addDrinkButton"
+						"text": "Add Drink"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "addDrinkButtonMouseReleased", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ammountDrankLabel"
+						"text": "Water Drank Today"
+						"font": new java.awt.Font( "Segoe UI Semibold", 0, 20 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "goalLabel"
+						"text": "Goal Ammount"
+						"font": new java.awt.Font( "Segoe UI Semibold", 0, 20 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "leftLabel"
+						"text": "Ammount Left"
+						"font": new java.awt.Font( "Segoe UI Semibold", 0, 20 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "drankFeild"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "goalField"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "leftField"
+						"editable": false
+					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Water"
 				} )
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 0, 0 )
+			"location": new java.awt.Point( 200, 170 )
 			"size": new java.awt.Dimension( 555, 395 )
 		} )
 	}

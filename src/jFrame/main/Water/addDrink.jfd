@@ -1,0 +1,35 @@
+JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::p, par l {seq l {par t:::p {comp inputField::l:::x, comp descLabel::l:::x}, space ::9:x}, seq l {comp addButton:::p::p, space ::163:x, comp cancelButton:::p::p, space :::x}}}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp descLabel:::p::p, space :::p, comp inputField:::p::p, space ::12:x, par b {comp addButton::b:p::p, comp cancelButton::b:p::p}, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Add Drink"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addButton"
+				"text": "Add"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "addButtonMouseReleased", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancelButton"
+				"text": "Cancel"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "cancelButtonMouseReleased", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "descLabel"
+				"text": "Type in ammount drank in ml and click Add"
+				"font": new java.awt.Font( "Segoe UI Semibold", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "inputField"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 385, 205 )
+			"size": new java.awt.Dimension( 305, 140 )
+		} )
+	}
+}

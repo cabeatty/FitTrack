@@ -4,6 +4,8 @@
 
 package jFrame.login;
 
+import jFrame.Utilities.fieldChecks;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -19,22 +21,22 @@ public class login extends JFrame
 		initComponents();
 	}
 
-	public void changed()
-	{
-		if(uNameField.getText().equals("")&&pWordField.getText().equals(""))
-		{
-			loginButton.setEnabled(false);
-			JOptionPane.showMessageDialog(this, "Fill in all forms to login.");
-		}
-	}
-
 	private void loginButtonMouseReleased(MouseEvent e)
 	{
-		changed();
-		String uName = uNameField.getText();
-		String pWord = pWordField.getText();
-
-		System.out.println(uName + ", " + pWord);
+		JTextField[] fieldsArr = {uNameField, pWordField};
+		if ( fieldChecks.empty( fieldsArr ) )
+		{
+			if (true) //TODO add checker to see if account exists in the database
+			{
+				if (true) //TODO add checker to see if password coencides with entered account
+				{
+					String uName = uNameField.getText();
+					String pWord = pWordField.getText();
+					JOptionPane.showMessageDialog(this, uName + " logged in.");
+					this.dispose();
+				}
+			}
+		}
 	}
 
 	private void cancelButtonMouseReleased(MouseEvent e)

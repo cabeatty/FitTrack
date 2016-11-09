@@ -14,7 +14,7 @@ import javax.swing.GroupLayout;
 
 //Local imports
 import FitTrack.Components.User;
-import jFrame.Utilities.changed;
+import jFrame.Utilities.fieldChecks;
 
 public class createAcc extends JFrame
 {
@@ -43,29 +43,21 @@ public class createAcc extends JFrame
 
 	//Non-generated env variables;
 	String username, gender, age, weight, height, email, password;
-	//JTextField[] fieldsArr = {uNameField, ageField, weightField, heightField, emailField1, emailField2, passwordField1, passwordField2};
 
 	public createAcc()
 	{
 		initComponents();
 	}
 
-	public void changed()
+	private void createAccButtonMouseReleased(MouseEvent e)
 	{
-		if (
-				uNameField.getText().equals("") && ageField.getText().equals("") && weightField.getText().equals("") &&
-						heightField.getText().equals("") && emailField1.getText().equals("") && emailField2.getText().equals("") &&
-						passwordField1.getText().equals("") && passwordField2.getText().equals("")
-				)
+		JTextField[] fieldsArr = {uNameField, ageField, weightField, heightField, emailField1, emailField2, passwordField1, passwordField2};
+
+		if (fieldChecks.empty(fieldsArr))
 		{
-			createAccButton.setEnabled(false);
-			JOptionPane.showMessageDialog(this, "Fill in all of the fields to create an account.");
-		}
-		else
-		{
-			if (passwordField1.getText().equals(passwordField2.getText()))
+			if ( fieldChecks.equal(emailField1, emailField2) )
 			{
-				if (emailField1.getText().equals(emailField2.getText()))
+				if ( fieldChecks.equal(passwordField1, passwordField2) )
 				{
 					username = uNameField.getText();
 					gender = genderComboBox.getSelectedItem().toString();
@@ -74,45 +66,20 @@ public class createAcc extends JFrame
 					height = heightField.getText();
 					email = emailField1.getText();
 					password = passwordField1.getText();
-
-					createAccButton.setEnabled(true);
-
+					User tempUser = new User(username, gender, Integer.parseInt(age), Integer.parseInt(weight), Double.parseDouble(height),
+							email, password);
+					tempUser.print();
+					JOptionPane.showMessageDialog(this, "Account: " + username + " created!");
+					this.dispose();
 				}
-				else
-				{
-					JOptionPane.showMessageDialog(this, "Emails don't match.");
-				}
-
+				else JOptionPane.showMessageDialog(this, "Passwords do not match.");
 			}
-			else
-			{
-				JOptionPane.showMessageDialog(this, "Passwords don't match.");
-			}
-
+			else JOptionPane.showMessageDialog(this, "Emails do not match.");
 		}
-
-	}
-
-	private void createAccButtonMouseReleased(MouseEvent e)
-	{
-		changed();
-
-
-		username = uNameField.getText();
-		gender = genderComboBox.getSelectedItem().toString();
-		age = ageField.getText();
-		weight = weightField.getText();
-		height = heightField.getText();
-		email = emailField1.getText();
-		password = passwordField1.getText();
-
-		User tempUser = new User(username, gender, Integer.parseInt(age), Integer.parseInt(weight), Double.parseDouble(height),
-				email, password);
-
-		tempUser.print();
-		JOptionPane.showMessageDialog(this, "Account: " + username + " created!");
-		this.dispose();
-
+		else
+		{
+			JOptionPane.showMessageDialog(this, "Fill in all of the fields to create an account.");
+		}
 
 	}
 
@@ -291,7 +258,5 @@ public class createAcc extends JFrame
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents
 	}
 
-
-	//public JTextField[] fieldsArr = {uNameField, ageField, weightField, heightField, emailField1, emailField2, passwordField1, passwordField2 };
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 }

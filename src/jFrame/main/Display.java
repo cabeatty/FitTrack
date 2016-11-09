@@ -7,6 +7,7 @@ package jFrame.main;
 import jFrame.createAcc.createAcc;
 import jFrame.login.login;
 import FitTrack.Components.User;
+import jFrame.main.Water.addDrink;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -42,6 +43,13 @@ public class Display extends JFrame
 
 	}
 
+	private void addDrinkButtonMouseReleased(MouseEvent e)
+	{
+		addDrink drink = new addDrink();
+		drink.setVisible(true);
+		drink.setResizable(false);
+	}
+
 	private void initComponents()
 	{
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
@@ -57,8 +65,16 @@ public class Display extends JFrame
 		caloriePanel = new JPanel();
 		sleepPanel = new JPanel();
 		waterPanel = new JPanel();
+		addDrinkButton = new JButton();
+		ammountDrankLabel = new JLabel();
+		goalLabel = new JLabel();
+		leftLabel = new JLabel();
+		drankFeild = new JTextField();
+		goalField = new JTextField();
+		leftField = new JTextField();
 
 		//======== this ========
+		setTitle("FitTrack");
 		Container contentPane = getContentPane();
 
 		//======== tabbedPane1 ========
@@ -109,19 +125,15 @@ public class Display extends JFrame
 				homePanelLayout.setHorizontalGroup(
 					homePanelLayout.createParallelGroup()
 						.addGroup(homePanelLayout.createSequentialGroup()
+							.addGap(22, 22, 22)
 							.addGroup(homePanelLayout.createParallelGroup()
+								.addComponent(homeLabel)
+								.addComponent(homeSubLabel)
 								.addGroup(homePanelLayout.createSequentialGroup()
-									.addGap(22, 22, 22)
-									.addGroup(homePanelLayout.createParallelGroup()
-										.addComponent(homeLabel)
-										.addComponent(homeSubLabel))
-									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 300, Short.MAX_VALUE))
-								.addGroup(homePanelLayout.createSequentialGroup()
-									.addContainerGap(282, Short.MAX_VALUE)
 									.addComponent(loginButton)
 									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-									.addComponent(createAccButton)
-									.addGap(41, 41, 41)))
+									.addComponent(createAccButton)))
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
 							.addComponent(iconLabel)
 							.addGap(28, 28, 28))
 				);
@@ -193,15 +205,77 @@ public class Display extends JFrame
 			//======== waterPanel ========
 			{
 
+				//---- addDrinkButton ----
+				addDrinkButton.setText("Add Drink");
+				addDrinkButton.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						addDrinkButtonMouseReleased(e);
+					}
+				});
+
+				//---- ammountDrankLabel ----
+				ammountDrankLabel.setText("Water Drank Today");
+				ammountDrankLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
+
+				//---- goalLabel ----
+				goalLabel.setText("Goal Ammount");
+				goalLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
+
+				//---- leftLabel ----
+				leftLabel.setText("Ammount Left");
+				leftLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
+
+				//---- drankFeild ----
+				drankFeild.setEditable(false);
+
+				//---- goalField ----
+				goalField.setEditable(false);
+
+				//---- leftField ----
+				leftField.setEditable(false);
+
 				GroupLayout waterPanelLayout = new GroupLayout(waterPanel);
 				waterPanel.setLayout(waterPanelLayout);
 				waterPanelLayout.setHorizontalGroup(
 					waterPanelLayout.createParallelGroup()
-						.addGap(0, 537, Short.MAX_VALUE)
+						.addGroup(waterPanelLayout.createSequentialGroup()
+							.addGap(56, 56, 56)
+							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+								.addComponent(goalField, GroupLayout.PREFERRED_SIZE, 156, GroupLayout.PREFERRED_SIZE)
+								.addGroup(waterPanelLayout.createSequentialGroup()
+									.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+										.addComponent(addDrinkButton)
+										.addComponent(leftLabel)
+										.addComponent(goalLabel)
+										.addComponent(ammountDrankLabel))
+									.addGroup(waterPanelLayout.createParallelGroup()
+										.addGroup(waterPanelLayout.createSequentialGroup()
+											.addGap(40, 40, 40)
+											.addComponent(drankFeild, GroupLayout.PREFERRED_SIZE, 156, GroupLayout.PREFERRED_SIZE))
+										.addGroup(GroupLayout.Alignment.TRAILING, waterPanelLayout.createSequentialGroup()
+											.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+											.addComponent(leftField, GroupLayout.PREFERRED_SIZE, 156, GroupLayout.PREFERRED_SIZE)))))
+							.addContainerGap(110, Short.MAX_VALUE))
 				);
 				waterPanelLayout.setVerticalGroup(
 					waterPanelLayout.createParallelGroup()
-						.addGap(0, 334, Short.MAX_VALUE)
+						.addGroup(GroupLayout.Alignment.TRAILING, waterPanelLayout.createSequentialGroup()
+							.addGap(64, 64, 64)
+							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+								.addComponent(ammountDrankLabel)
+								.addComponent(drankFeild, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+							.addGap(18, 18, 18)
+							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+								.addComponent(goalLabel)
+								.addComponent(goalField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+							.addGap(18, 18, 18)
+							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+								.addComponent(leftLabel)
+								.addComponent(leftField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+							.addGap(18, 18, 18)
+							.addComponent(addDrinkButton)
+							.addContainerGap(98, Short.MAX_VALUE))
 				);
 			}
 			tabbedPane1.addTab("Water", waterPanel);
@@ -235,5 +309,12 @@ public class Display extends JFrame
 	private JPanel caloriePanel;
 	private JPanel sleepPanel;
 	private JPanel waterPanel;
+	private JButton addDrinkButton;
+	private JLabel ammountDrankLabel;
+	private JLabel goalLabel;
+	private JLabel leftLabel;
+	private JTextField drankFeild;
+	private JTextField goalField;
+	private JTextField leftField;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 }
