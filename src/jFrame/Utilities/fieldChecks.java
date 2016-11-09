@@ -43,7 +43,7 @@ public class fieldChecks
 	{
 		for (JComboBox box : boxes)
 		{
-			if (box.getSelectedItem().toString().equals(" ") )
+			if ( box.getSelectedItem().toString().equals(" ") )
 			{
 				return false;
 			}

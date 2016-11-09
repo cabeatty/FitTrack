@@ -18,29 +18,6 @@ import jFrame.Utilities.fieldChecks;
 
 public class createAcc extends JFrame
 {
-	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-	// Generated using JFormDesigner Evaluation license - Colin Beatty
-	private JLabel unameLabel;
-	private JTextField uNameField;
-	private JLabel genderLabel;
-	private JComboBox<String> genderComboBox;
-	private JLabel ageLabel;
-	private JTextField ageField;
-	private JLabel weightLabel;
-	private JTextField weightField;
-	private JLabel heightLabel;
-	private JTextField heightField;
-	private JLabel emailLabel1;
-	private JTextField emailField1;
-	private JLabel emailLabel2;
-	private JTextField emailField2;
-	private JLabel pWordLabel1;
-	private JPasswordField passwordField1;
-	private JLabel pWordLabel2;
-	private JPasswordField passwordField2;
-	private JButton createAccButton;
-	private JButton cancelButton;
-
 	//Non-generated env variables;
 	String username, gender, age, weight, height, email, password;
 
@@ -52,8 +29,9 @@ public class createAcc extends JFrame
 	private void createAccButtonMouseReleased(MouseEvent e)
 	{
 		JTextField[] fieldsArr = {uNameField, ageField, weightField, heightField, emailField1, emailField2, passwordField1, passwordField2};
+		JComboBox[] boxesArr = { genderComboBox };
 
-		if (fieldChecks.empty(fieldsArr))
+		if ( fieldChecks.empty(fieldsArr) && fieldChecks.boxSelected(boxesArr) )
 		{
 			if ( fieldChecks.equal(emailField1, emailField2) )
 			{
@@ -124,10 +102,11 @@ public class createAcc extends JFrame
 		genderLabel.setText("Gender");
 
 		//---- genderComboBox ----
-		genderComboBox.setModel(new DefaultComboBoxModel<>(new String[]{
-				"Male",
-				"Female",
-				"Other"
+		genderComboBox.setModel(new DefaultComboBoxModel<>(new String[] {
+			" ",
+			"Male",
+			"Female",
+			"Other"
 		}));
 
 		//---- ageLabel ----
@@ -153,22 +132,18 @@ public class createAcc extends JFrame
 
 		//---- createAccButton ----
 		createAccButton.setText("Create Account");
-		createAccButton.addMouseListener(new MouseAdapter()
-		{
+		createAccButton.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseReleased(MouseEvent e)
-			{
+			public void mouseReleased(MouseEvent e) {
 				createAccButtonMouseReleased(e);
 			}
 		});
 
 		//---- cancelButton ----
 		cancelButton.setText("Cancel");
-		cancelButton.addMouseListener(new MouseAdapter()
-		{
+		cancelButton.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseReleased(MouseEvent e)
-			{
+			public void mouseReleased(MouseEvent e) {
 				cancelButtonMouseReleased(e);
 			}
 		});
@@ -176,87 +151,109 @@ public class createAcc extends JFrame
 		GroupLayout contentPaneLayout = new GroupLayout(contentPane);
 		contentPane.setLayout(contentPaneLayout);
 		contentPaneLayout.setHorizontalGroup(
-				contentPaneLayout.createParallelGroup()
+			contentPaneLayout.createParallelGroup()
+				.addGroup(contentPaneLayout.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(contentPaneLayout.createParallelGroup()
+						.addComponent(genderComboBox)
+						.addComponent(uNameField)
+						.addComponent(weightField)
+						.addComponent(ageField, GroupLayout.Alignment.TRAILING)
+						.addComponent(emailField1)
+						.addComponent(heightField)
 						.addGroup(contentPaneLayout.createSequentialGroup()
-								.addContainerGap()
-								.addGroup(contentPaneLayout.createParallelGroup()
-										.addComponent(genderComboBox)
-										.addComponent(uNameField)
-										.addComponent(weightField)
-										.addComponent(ageField, GroupLayout.Alignment.TRAILING)
-										.addComponent(emailField1)
-										.addComponent(heightField)
-										.addGroup(contentPaneLayout.createSequentialGroup()
-												.addComponent(createAccButton)
-												.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-												.addComponent(cancelButton))
-										.addGroup(contentPaneLayout.createSequentialGroup()
-												.addGroup(contentPaneLayout.createParallelGroup()
-														.addComponent(unameLabel)
-														.addComponent(genderLabel)
-														.addComponent(ageLabel)
-														.addComponent(weightLabel)
-														.addComponent(heightLabel)
-														.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
-																.addComponent(passwordField1, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE)
-																.addComponent(emailLabel1, GroupLayout.Alignment.LEADING)
-																.addComponent(emailLabel2, GroupLayout.Alignment.LEADING)
-																.addComponent(emailField2, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE))
-														.addComponent(pWordLabel1)
-														.addComponent(pWordLabel2)
-														.addComponent(passwordField2, GroupLayout.PREFERRED_SIZE, 376, GroupLayout.PREFERRED_SIZE))
-												.addGap(0, 0, Short.MAX_VALUE)))
-								.addContainerGap())
+							.addComponent(createAccButton)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addComponent(cancelButton))
+						.addGroup(contentPaneLayout.createSequentialGroup()
+							.addGroup(contentPaneLayout.createParallelGroup()
+								.addComponent(unameLabel)
+								.addComponent(genderLabel)
+								.addComponent(ageLabel)
+								.addComponent(weightLabel)
+								.addComponent(heightLabel)
+								.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
+									.addComponent(passwordField1, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE)
+									.addComponent(emailLabel1, GroupLayout.Alignment.LEADING)
+									.addComponent(emailLabel2, GroupLayout.Alignment.LEADING)
+									.addComponent(emailField2, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE))
+								.addComponent(pWordLabel1)
+								.addComponent(pWordLabel2)
+								.addComponent(passwordField2, GroupLayout.PREFERRED_SIZE, 376, GroupLayout.PREFERRED_SIZE))
+							.addGap(0, 0, Short.MAX_VALUE)))
+					.addContainerGap())
 		);
 		contentPaneLayout.setVerticalGroup(
-				contentPaneLayout.createParallelGroup()
-						.addGroup(contentPaneLayout.createSequentialGroup()
-								.addContainerGap()
-								.addComponent(unameLabel)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(uNameField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(genderLabel)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(genderComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(ageLabel)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(ageField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(weightLabel)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(weightField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(heightLabel)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(heightField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(emailLabel1)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(emailField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(emailLabel2)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(emailField2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(pWordLabel1)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(passwordField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(pWordLabel2)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(passwordField2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
-								.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-										.addComponent(createAccButton)
-										.addComponent(cancelButton))
-								.addContainerGap())
+			contentPaneLayout.createParallelGroup()
+				.addGroup(contentPaneLayout.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(unameLabel)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(uNameField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(genderLabel)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(genderComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(ageLabel)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(ageField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(weightLabel)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(weightField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(heightLabel)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(heightField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(emailLabel1)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(emailField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(emailLabel2)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(emailField2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(pWordLabel1)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(passwordField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(pWordLabel2)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(passwordField2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+					.addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+						.addComponent(createAccButton)
+						.addComponent(cancelButton))
+					.addContainerGap())
 		);
 		pack();
 		setLocationRelativeTo(getOwner());
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents
 	}
 
+	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+	// Generated using JFormDesigner Evaluation license - Colin Beatty
+	private JLabel unameLabel;
+	private JTextField uNameField;
+	private JLabel genderLabel;
+	private JComboBox<String> genderComboBox;
+	private JLabel ageLabel;
+	private JTextField ageField;
+	private JLabel weightLabel;
+	private JTextField weightField;
+	private JLabel heightLabel;
+	private JTextField heightField;
+	private JLabel emailLabel1;
+	private JTextField emailField1;
+	private JLabel emailLabel2;
+	private JTextField emailField2;
+	private JLabel pWordLabel1;
+	private JPasswordField passwordField1;
+	private JLabel pWordLabel2;
+	private JPasswordField passwordField2;
+	private JButton createAccButton;
+	private JButton cancelButton;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 }

@@ -1,11 +1,11 @@
-JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112-release" encoding: "UTF-8"
+JFDML JFormDesigner: "5.2.4.1.329" Java: "1.8.0_112-release" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
 			"$horizontalGroup": "par l {seq {space :::p, par l {comp genderComboBox::l:::x, comp uNameField:::::x, comp weightField::l:::x, comp ageField::t:::x, comp emailField1::l:::x, comp heightField::l:::x, seq l {comp createAccButton:::p::p, space :::x, comp cancelButton:::p::p}, seq {par l {comp unameLabel:::p::p, comp genderLabel::l:p::p, comp ageLabel::l:p::p, comp weightLabel::l:p::p, comp heightLabel::l:p::p, par t:l::p {comp passwordField1::l::376:x, comp emailLabel1::l:p::p, comp emailLabel2::l:p::p, comp emailField2::l::376:x}, comp pWordLabel1:::p::p, comp pWordLabel2::l:p::p, comp passwordField2::l:p:376:p}, space :0:0:x}}, space :::p}}"
-			"$verticalGroup": "par l {seq l {space :::p, comp unameLabel:::p::p, space :::p, comp uNameField:::p::p, space :::p, comp genderLabel:::p::p, space :::p, comp genderComboBox:::p::p, space :::p, comp ageLabel:::p::p, space :::p, comp ageField:::p::p, space :::p, comp weightLabel:::p::p, space :::p, comp weightField:::p::p, space :::p, comp heightLabel:::p::p, space :::p, comp heightField:::p::p, space :::p, comp emailLabel1:::p::p, space :::p, comp emailField1:::p::p, space :::p, comp emailLabel2:::p::p, space :::p, comp emailField2:::p::p, space :::p, comp pWordLabel1:::p::p, space :::p, comp passwordField1:::p::p, space :::p, comp pWordLabel2:::p::p, space :::p, comp passwordField2:::p::p, space ::33:x, par b {comp createAccButton::b:p::p, comp cancelButton::b:p::p}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp unameLabel:::p::p, space :::p, comp uNameField:::p::p, space :::p, comp genderLabel:::p::p, space :::p, comp genderComboBox:::p::p, space :::p, comp ageLabel:::p::p, space :::p, comp ageField:::p::p, space :::p, comp weightLabel:::p::p, space :::p, comp weightField:::p::p, space :::p, comp heightLabel:::p::p, space :::p, comp heightField:::p::p, space :::p, comp emailLabel1:::p::p, space :::p, comp emailField1:::p::p, space :::p, comp emailLabel2:::p::p, space :::p, comp emailField2:::p::p, space :::p, comp pWordLabel1:::p::p, space :::p, comp passwordField1:::p::p, space :::p, comp pWordLabel2:::p::p, space :::p, comp passwordField2:::p::p, space ::24:x, par b {comp createAccButton::b:p::p, comp cancelButton::b:p::p}, space :::p}}"
 		} ) {
 			name: "this"
 			"title": "Create Account"
@@ -23,7 +23,8 @@ new FormModel {
 			add( new FormComponent( "javax.swing.JComboBox" ) {
 				name: "genderComboBox"
 				"model": new javax.swing.DefaultComboBoxModel {
-					selectedItem: "Male"
+					selectedItem: " "
+					addElement( " " )
 					addElement( "Male" )
 					addElement( "Female" )
 					addElement( "Other" )
