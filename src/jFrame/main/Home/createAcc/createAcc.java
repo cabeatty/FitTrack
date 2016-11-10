@@ -5,7 +5,7 @@
  * @author Colin Beatty
  */
 
-package jFrame.createAcc;
+package jFrame.main.Home.createAcc;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -14,6 +14,7 @@ import javax.swing.GroupLayout;
 
 //Local imports
 import FitTrack.Components.User;
+import jFrame.Utilities.create;
 import jFrame.Utilities.fieldChecks;
 
 public class createAcc extends JFrame
@@ -37,15 +38,9 @@ public class createAcc extends JFrame
 			{
 				if ( fieldChecks.equal(passwordField1, passwordField2) )
 				{
-					username = uNameField.getText();
-					gender = genderComboBox.getSelectedItem().toString();
-					age = ageField.getText();
-					weight = weightField.getText();
-					height = heightField.getText();
-					email = emailField1.getText();
-					password = passwordField1.getText();
-					User tempUser = new User(username, gender, Integer.parseInt(age), Integer.parseInt(weight), Double.parseDouble(height),
-							email, password);
+
+					User tempUser = create.createAccount(uNameField, genderComboBox, ageField, weightField,
+														 heightField, emailField1, passwordField1);
 					tempUser.print();
 					JOptionPane.showMessageDialog(this, "Account: " + username + " created!");
 					this.dispose();

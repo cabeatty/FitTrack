@@ -2,7 +2,7 @@
  * Created by JFormDesigner on Mon Nov 07 16:27:15 EST 2016
  */
 
-package jFrame.login;
+package jFrame.main.Home.login;
 
 import jFrame.Utilities.fieldChecks;
 
@@ -35,8 +35,11 @@ public class login extends JFrame
 					JOptionPane.showMessageDialog(this, uName + " logged in.");
 					this.dispose();
 				}
+				else JOptionPane.showMessageDialog(this, "Incorrect password.");
 			}
+			else JOptionPane.showMessageDialog(this, "Account " + uNameField.getText() + " not found.");
 		}
+		else JOptionPane.showMessageDialog(this, "Fill in fields to login");
 	}
 
 	private void cancelButtonMouseReleased(MouseEvent e)

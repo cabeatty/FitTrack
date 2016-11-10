@@ -4,9 +4,8 @@
 
 package jFrame.main;
 
-import jFrame.createAcc.createAcc;
-import jFrame.login.login;
-import FitTrack.Components.User;
+import jFrame.main.Home.createAcc.createAcc;
+import jFrame.main.Home.login.login;
 import jFrame.main.Calories.addMeal;
 import jFrame.main.Exersize.addWorkout;
 import jFrame.main.Sleep.addSleep;
@@ -23,6 +22,7 @@ import javax.swing.GroupLayout;
 public class Display extends JFrame
 {
 	ImageIcon runningMan = new ImageIcon("/resources/man.png");
+	boolean loggedin = false;
 
 	public Display()
 	{
@@ -35,8 +35,25 @@ public class Display extends JFrame
 		login lin = new login();
 		lin.setVisible(true);
 		lin.setResizable(false);
+		logoutButton.setVisible(true);
+		loginButton.setVisible(false);
+		//TODO on successful login, want this button to disappear and logoutButton to appear in its place
+		loggedin = true;
+		loginStatus.setText("Logged in as: " + "username");
+		this.repaint();
 	}
 
+	private void logoutButtonMouseReleased(MouseEvent e)
+	{
+		logoutButton.setVisible(false);
+		loginButton.setVisible(true);
+		this.repaint();
+		JOptionPane.showMessageDialog(this, "username" + " logged out.");
+		loginStatus.setText("Not logged in.");
+		//TODO when logged in, trigger this button to be visible, and on successful logout, make invisible
+	}
+
+	//TODO when logged out, want it to be impossible for user to access the apps functionality, ie: following buttons should be disabled
 	private void createAccButtonMouseReleased(MouseEvent e)
 	{
 		System.out.println("Create Account Pressed");
@@ -88,6 +105,7 @@ public class Display extends JFrame
 		createAccButton = new JButton();
 		iconLabel = new JLabel();
 		logoutButton = new JButton();
+		loginStatus = new JLabel();
 		exersizePanel = new JPanel();
 		addWorkoutButton = new JButton();
 		caloriePanel = new JPanel();
@@ -152,6 +170,15 @@ public class Display extends JFrame
 
 				//---- logoutButton ----
 				logoutButton.setText("Logout");
+				logoutButton.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						logoutButtonMouseReleased(e);
+					}
+				});
+
+				//---- loginStatus ----
+				loginStatus.setText("text");
 
 				GroupLayout homePanelLayout = new GroupLayout(homePanel);
 				homePanel.setLayout(homePanelLayout);
@@ -160,16 +187,17 @@ public class Display extends JFrame
 						.addGroup(homePanelLayout.createSequentialGroup()
 							.addGap(22, 22, 22)
 							.addGroup(homePanelLayout.createParallelGroup()
-								.addComponent(homeLabel)
 								.addComponent(homeSubLabel)
+								.addComponent(homeLabel)
 								.addGroup(homePanelLayout.createSequentialGroup()
+									.addComponent(createAccButton)
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 									.addComponent(loginButton)
 									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-									.addComponent(createAccButton)))
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-							.addGroup(homePanelLayout.createParallelGroup()
-								.addComponent(iconLabel, GroupLayout.Alignment.TRAILING)
-								.addComponent(logoutButton, GroupLayout.Alignment.TRAILING))
+									.addComponent(logoutButton))
+								.addComponent(loginStatus))
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addComponent(iconLabel)
 							.addGap(29, 29, 29))
 				);
 				homePanelLayout.setVerticalGroup(
@@ -177,20 +205,20 @@ public class Display extends JFrame
 						.addGroup(homePanelLayout.createSequentialGroup()
 							.addGroup(homePanelLayout.createParallelGroup()
 								.addGroup(homePanelLayout.createSequentialGroup()
+									.addContainerGap(11, Short.MAX_VALUE)
+									.addComponent(iconLabel, GroupLayout.PREFERRED_SIZE, 288, GroupLayout.PREFERRED_SIZE))
+								.addGroup(homePanelLayout.createSequentialGroup()
 									.addGap(29, 29, 29)
 									.addComponent(homeLabel)
 									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 									.addComponent(homeSubLabel)
-									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 193, Short.MAX_VALUE))
-								.addGroup(GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
-									.addContainerGap(11, Short.MAX_VALUE)
-									.addComponent(iconLabel, GroupLayout.PREFERRED_SIZE, 288, GroupLayout.PREFERRED_SIZE)
-									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)))
-							.addGroup(homePanelLayout.createParallelGroup()
-								.addGroup(homePanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-									.addComponent(loginButton)
-									.addComponent(createAccButton))
-								.addComponent(logoutButton))
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
+									.addComponent(loginStatus)))
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+							.addGroup(homePanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+								.addComponent(createAccButton)
+								.addComponent(logoutButton)
+								.addComponent(loginButton))
 							.addContainerGap())
 				);
 			}
@@ -372,7 +400,7 @@ public class Display extends JFrame
 		contentPane.setLayout(contentPaneLayout);
 		contentPaneLayout.setHorizontalGroup(
 			contentPaneLayout.createParallelGroup()
-				.addComponent(tabbedPane1)
+				.addComponent(tabbedPane1, GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
 		);
 		contentPaneLayout.setVerticalGroup(
 			contentPaneLayout.createParallelGroup()
@@ -381,6 +409,10 @@ public class Display extends JFrame
 		pack();
 		setLocationRelativeTo(getOwner());
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents
+
+		logoutButton.setVisible(false);
+		loginStatus.setText("Not logged in.");
+		this.repaint();
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
@@ -393,6 +425,7 @@ public class Display extends JFrame
 	private JButton createAccButton;
 	private JLabel iconLabel;
 	private JButton logoutButton;
+	private JLabel loginStatus;
 	private JPanel exersizePanel;
 	private JButton addWorkoutButton;
 	private JPanel caloriePanel;
