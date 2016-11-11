@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e28fe423-7ed4-44c0-9599-5d141ec91743" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jFrame/Utilities/create.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/createAcc/createAcc.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/login/login.jfd" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.java" afterPath="$PROJECT_DIR$/src/jFrame/main/Home/createAcc/createAcc.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jFrame/createAcc/createAcc.jfd" afterPath="$PROJECT_DIR$/src/jFrame/main/Home/createAcc/createAcc.jfd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jFrame/login/login.java" afterPath="$PROJECT_DIR$/src/jFrame/main/Home/login/login.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jFrame/login/login.jfd" afterPath="$PROJECT_DIR$/src/jFrame/main/Home/login/login.jfd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$3.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.jfd" afterPath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.jfd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/main/Display.java" afterPath="$PROJECT_DIR$/src/jFrame/main/Display.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/main/Display.jfd" afterPath="$PROJECT_DIR$/src/jFrame/main/Display.jfd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/main/Sleep/addSleep.java" afterPath="$PROJECT_DIR$/src/jFrame/main/Sleep/addSleep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jFrame/main/Sleep/addSleep.jfd" afterPath="$PROJECT_DIR$/src/jFrame/main/Sleep/addSleep.jfd" />
     </list>
     <ignored path="FitTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -49,7 +27,7 @@
       <file leaf-file-name="fieldChecks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jFrame/Utilities/fieldChecks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
+            <state relative-caret-position="720">
               <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding />
             </state>
@@ -59,7 +37,7 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5413">
+            <state relative-caret-position="750">
               <caret line="50" column="73" selection-start-line="50" selection-start-column="73" selection-end-line="50" selection-end-column="73" />
               <folding>
                 <marker date="1478804063103" expanded="true" signature="2377:14103" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -92,7 +70,7 @@
       <file leaf-file-name="createAcc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jFrame/main/Home/createAcc/createAcc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
+            <state relative-caret-position="594">
               <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding>
                 <marker date="1478808624059" expanded="false" signature="1644:8442" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -115,7 +93,7 @@
       <file leaf-file-name="addSleep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jFrame/main/Sleep/addSleep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
+            <state relative-caret-position="495">
               <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
               <folding>
                 <marker date="1478803273699" expanded="false" signature="811:3176" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -215,7 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,164 +212,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jFrame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jFrame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jFrame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jFrame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="createAcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -922,7 +746,8 @@
       <workItem from="1478720080244" duration="9000" />
       <workItem from="1478722797762" duration="3454000" />
       <workItem from="1478802691071" duration="1513000" />
-      <workItem from="1478807446935" duration="1173000" />
+      <workItem from="1478807446935" duration="1442000" />
+      <workItem from="1478896627244" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;">
       <created>1478656119355</created>
@@ -952,11 +777,25 @@
       <option name="project" value="LOCAL" />
       <updated>1478717557280</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added create class, and subsiquent createAccount method, in util folder that manages creating new users given fields and comboBoxes, returns a new user based off of the content of said swing components.&#10;Also made minor changes to login.java and implemented the createAccount method within the Create Account button handler of the createAcc.java gui.">
+      <created>1478808886474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1478808886475</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added create class, and subsiquent createAccount method, in util folder that manages creating new users given fields and comboBoxes, returns a new user based off of the content of said swing components.&#10;Also made minor changes to login.java and implemented the createAccount method within the Create Account button handler of the createAcc.java gui.">
+      <created>1478896664910</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1478896664910</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33153000" />
+    <option name="totallyTimeSpent" value="33479000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -969,11 +808,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="21" width="1325" height="747" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771823" sideWeight="0.497272" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14854518" sideWeight="0.50818396" order="7" side_tool="true" content_ui="tabs" />
@@ -983,7 +821,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16991426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16991426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -994,6 +832,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771823" sideWeight="0.497272" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1041,7 +880,8 @@
     <MESSAGE value="added drink tab and functionality to add drink button, as well as fixed fieldChecks function" />
     <MESSAGE value="Added buttons to each menu, and listeners to each that spawns an input menu.  Also added checker in fieldsChecker class to see if an array of jComboBoxes have valid input." />
     <MESSAGE value="Added boxSelected functionality to the addAccount popup menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added boxSelected functionality to the addAccount popup menu" />
+    <MESSAGE value="Added create class, and subsiquent createAccount method, in util folder that manages creating new users given fields and comboBoxes, returns a new user based off of the content of said swing components.&#10;Also made minor changes to login.java and implemented the createAccount method within the Create Account button handler of the createAcc.java gui." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added create class, and subsiquent createAccount method, in util folder that manages creating new users given fields and comboBoxes, returns a new user based off of the content of said swing components.&#10;Also made minor changes to login.java and implemented the createAccount method within the Create Account button handler of the createAcc.java gui." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1264,9 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <marker date="1478715719175" expanded="false" signature="322:1033" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,7 +1120,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/Utilities/fieldChecks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
+        <state relative-caret-position="720">
           <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding />
         </state>
@@ -1291,7 +1128,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5413">
+        <state relative-caret-position="750">
           <caret line="50" column="73" selection-start-line="50" selection-start-column="73" selection-end-line="50" selection-end-column="73" />
           <folding>
             <marker date="1478804063103" expanded="true" signature="2377:14103" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -1304,7 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1312,27 +1148,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <marker date="1478715217079" expanded="false" signature="785:3529" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1478715217079" expanded="false" signature="3535:3870" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/main/Sleep/addSleep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
+        <state relative-caret-position="495">
           <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
           <folding>
             <marker date="1478803273699" expanded="false" signature="811:3176" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -1351,7 +1183,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/main/Home/createAcc/createAcc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="594">
           <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding>
             <marker date="1478808624059" expanded="false" signature="1644:8442" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
