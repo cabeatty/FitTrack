@@ -53,21 +53,30 @@ new FormModel {
 					"title": "Home"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq {space :::p, comp addWorkoutButton:::p::p, space ::425:x}}"
-					"$verticalGroup": "par l {seq l {space ::305:x, comp addWorkoutButton:::p::p, space :::p}}"
+					"$horizontalGroup": "par l {seq {space :::p, par l {seq l {comp addWorkoutButton:::p::p, space :0:419:x}, comp workoutScrollPane::l::529:x}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::p, comp workoutScrollPane::::293:x, space :::p, comp addWorkoutButton:::p::p, space :::p}}"
 				} ) {
 					name: "exersizePanel"
+					"focusable": false
+					"enabled": false
 					add( new FormComponent( "javax.swing.JButton" ) {
 						name: "addWorkoutButton"
 						"text": "Add Workout"
 						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "addWorkoutButtonMouseReleased", true ) )
 					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "workoutScrollPane"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "workoutField"
+							"editable": false
+						} )
+					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Exersize"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq l {space :::p, comp addMealButton:::p::p, space ::448:x}}"
-					"$verticalGroup": "par l {seq t {space ::305:x, comp addMealButton:::p::p, space :::p}}"
+					"$horizontalGroup": "par l {seq {space :::p, par l {comp mealsScrollPane::t::529:x, seq {par l {comp addMealButton:::p::p, comp mealListLabel::l:p::p, seq {par l {comp totalCalLabel::l:p::p, comp targetCalLabel::l:p::p, comp diffCalLabel::l:p::p}, space :p:70:p, par l {comp targetCalField:::p:201:p, comp totalCalField:::p:201:p, comp diffCalField:::p:201:p}}}, space :0:168:x}}, space :::p}}"
+					"$verticalGroup": "par l {seq t {space :::p, comp mealListLabel:::p::p, space :::p, comp mealsScrollPane:::p:124:p, space s:::p, par b {comp totalCalLabel::b:p::p, comp totalCalField::b:p::p}, space :::p, par b {comp targetCalLabel::b:p::p, comp targetCalField::b:p::p}, space :::p, par b {comp diffCalLabel::b:p::p, comp diffCalField::b:p::p}, space ::51:x, comp addMealButton:::p::p, space :::p}}"
 				} ) {
 					name: "caloriePanel"
 					add( new FormComponent( "javax.swing.JButton" ) {
@@ -75,18 +84,60 @@ new FormModel {
 						"text": "Add Meal"
 						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "addMealButtonMouseReleased", true ) )
 					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "mealListLabel"
+						"text": "Todays Meals"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "mealsScrollPane"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "mealsField"
+							"editable": false
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "totalCalLabel"
+						"text": "Total Calories"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "totalCalField"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "targetCalLabel"
+						"text": "Target Calories"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "targetCalField"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "diffCalLabel"
+						"text": "Difference"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "diffCalField"
+						"editable": false
+					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Calories"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq l {space :::p, comp addSleepButton:::p::p, space ::444:x}}"
-					"$verticalGroup": "par l {seq t {space ::305:x, comp addSleepButton:::p::p, space :::p}}"
+					"$horizontalGroup": "par l {seq l {space :::p, par l {seq {comp addSleepButton:::p::p, space :0:438:x}, comp sleepScrollPane::::529:x}, space :::p}}"
+					"$verticalGroup": "par l {seq t {space :::p, comp sleepScrollPane::::293:x, space :::p, comp addSleepButton:::p::p, space :::p}}"
 				} ) {
 					name: "sleepPanel"
 					add( new FormComponent( "javax.swing.JButton" ) {
 						name: "addSleepButton"
 						"text": "Add Sleep"
 						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "addSleepButtonMouseReleased", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "sleepScrollPane"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "sleepField"
+							"editable": false
+						} )
 					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Sleep"
@@ -155,7 +206,7 @@ new FormModel {
 				} )
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 70, 45 )
+			"location": new java.awt.Point( 105, 25 )
 			"size": new java.awt.Dimension( 555, 395 )
 		} )
 	}

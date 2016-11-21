@@ -8,7 +8,7 @@ import javax.swing.*;
  * Created by colin on 07/11/16.
  */
 
-public class Disp
+public class Boot
 {
 	public static void main(String[] args)
 	{

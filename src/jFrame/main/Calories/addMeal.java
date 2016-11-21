@@ -5,6 +5,7 @@
 package jFrame.main.Calories;
 
 import jFrame.Utilities.fieldChecks;
+import jFrame.main.Display;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -27,7 +28,9 @@ public class addMeal extends JFrame
 
 		if ( fieldChecks.empty(fieldsArr) )
 		{
+			Display.calTrk.addMeal(Double.parseDouble(calorieField.getText()));
 			JOptionPane.showMessageDialog(this, "Meal added.");
+			Display.populateMealField();
 			this.dispose();
 		}
 	}

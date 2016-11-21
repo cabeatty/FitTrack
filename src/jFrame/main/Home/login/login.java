@@ -5,6 +5,7 @@
 package jFrame.main.Home.login;
 
 import jFrame.Utilities.fieldChecks;
+import jFrame.main.Display;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -32,6 +33,8 @@ public class login extends JFrame
 				{
 					String uName = uNameField.getText();
 					String pWord = pWordField.getText();
+					//Display.LOGGEDINFLAG = true;
+					//Display.updateLoginStatus();
 					JOptionPane.showMessageDialog(this, uName + " logged in.");
 					this.dispose();
 				}

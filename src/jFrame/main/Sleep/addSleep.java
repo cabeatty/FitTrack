@@ -10,6 +10,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.GroupLayout;
+import jFrame.main.Display;
 
 /**
  * @author Colin Beatty
@@ -27,9 +28,19 @@ public class addSleep extends JFrame
 
 		if (fieldChecks.empty(fieldsArr))
 		{
-			//TODO add code to add sleep to database
-			JOptionPane.showMessageDialog(this, "Added sleep.");
-			this.dispose();
+			try
+			{
+				Display.sleepTrk.addSleepHistory(Integer.parseInt(sleepField.getText()));
+				JOptionPane.showMessageDialog(this, "Added sleep.");
+				this.dispose();
+				Display.populateSleepField();
+				System.out.println(Display.sleepTrk.toString());
+			}
+			catch (Exception exc)
+			{
+				JOptionPane.showMessageDialog(this, "Input must be a whole number.");
+				sleepField.setText("");
+			}
 		}
 		else JOptionPane.showMessageDialog(this, "Fill in the fields to add sleep.");
 

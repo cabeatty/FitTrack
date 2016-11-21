@@ -16,6 +16,7 @@ import javax.swing.GroupLayout;
 import FitTrack.Components.User;
 import jFrame.Utilities.create;
 import jFrame.Utilities.fieldChecks;
+import jFrame.main.Display;
 
 public class createAcc extends JFrame
 {
@@ -42,7 +43,10 @@ public class createAcc extends JFrame
 					User tempUser = create.createAccount(uNameField, genderComboBox, ageField, weightField,
 														 heightField, emailField1, passwordField1);
 					tempUser.print();
-					JOptionPane.showMessageDialog(this, "Account: " + username + " created!");
+					JOptionPane.showMessageDialog(this, "Account " + uNameField.getText() + " created!");
+					Display.usr = tempUser;
+					Display.LOGGEDINFLAG = true;
+					Display.updateLoginStatus();
 					this.dispose();
 				}
 				else JOptionPane.showMessageDialog(this, "Passwords do not match.");
