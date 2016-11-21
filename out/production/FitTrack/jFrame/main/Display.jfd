@@ -1,4 +1,4 @@
-JFDML JFormDesigner: "5.2.4.1.329" Java: "1.8.0_112-release" encoding: "UTF-8"
+JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112-release" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
@@ -92,8 +92,8 @@ new FormModel {
 					"title": "Sleep"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq l {space :p:56:p, par t {comp goalField:::p:156:p, seq {par t {comp addDrinkButton:::p::p, comp leftLabel::t:p::p, comp goalLabel::t:p::p, comp ammountDrankLabel:::p::p}, par l {seq {space :p:40:p, comp drankFeild:::p:156:p}, seq t {space :::p, comp leftField:::p:156:p}}}}, space ::96:x}}"
-					"$verticalGroup": "par l {seq t {space :p:64:p, par b {comp ammountDrankLabel::b:p::p, comp drankFeild::b:p::p}, space s:::p, par b {comp goalLabel::b:p::p, comp goalField::b:p::p}, space s:::p, par b {comp leftLabel::b:p::p, comp leftField::b:p::p}, space s:::p, comp addDrinkButton:::p::p, space ::115:x}}"
+					"$horizontalGroup": "par l {seq l {space :p:56:p, par t {comp addDrinkButton:::p::p, comp leftLabel::t:p::p, comp goalLabel::t:p::p, comp ammountDrankLabel:::p::p}, space :40:40:p, par t {comp goalField::t::140:x, comp leftField::::140:x, comp addDrinkField::::140:x, comp drankField::l::140:x}, space :::p, par l {comp ozLabel1:::p::p, comp ozLabel2:::p::p, comp ozLabel3:::p::p, comp ozLabel4:::p::p}, space :p:92:p}}"
+					"$verticalGroup": "par l {seq t {space :p:64:p, par b {comp ammountDrankLabel::b:p::p, comp ozLabel1::b:p::p, comp drankField::b:p::p}, space s:::p, par b {comp goalLabel::b:p::p, comp goalField::b:p::p, comp ozLabel2::b:p::p}, space s:::p, par b {comp leftLabel::b:p::p, comp leftField::b:p::p, comp ozLabel3::b:p::p}, space s:::p, par b {comp addDrinkButton::b:p::p, comp addDrinkField::b:p::p, comp ozLabel4::b:p::p}, space ::115:x}}"
 				} ) {
 					name: "waterPanel"
 					add( new FormComponent( "javax.swing.JButton" ) {
@@ -117,16 +117,38 @@ new FormModel {
 						"font": new java.awt.Font( "Segoe UI Semibold", 0, 20 )
 					} )
 					add( new FormComponent( "javax.swing.JTextField" ) {
-						name: "drankFeild"
-						"editable": false
-					} )
-					add( new FormComponent( "javax.swing.JTextField" ) {
 						name: "goalField"
 						"editable": false
+						"text": "64"
 					} )
 					add( new FormComponent( "javax.swing.JTextField" ) {
 						name: "leftField"
 						"editable": false
+						"text": "64"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ozLabel1"
+						"text": "oz"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ozLabel2"
+						"text": "oz"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ozLabel3"
+						"text": "oz"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "addDrinkField"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ozLabel4"
+						"text": "oz"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "drankField"
+						"editable": false
+						"text": "0"
 					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Water"

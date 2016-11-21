@@ -4,12 +4,14 @@
 
 package jFrame.main;
 
+import javax.swing.event.*;
+import FitTrack.Components.waterIntakeTracker;
+import jFrame.Utilities.fieldChecks;
 import jFrame.main.Home.createAcc.createAcc;
 import jFrame.main.Home.login.login;
 import jFrame.main.Calories.addMeal;
 import jFrame.main.Exersize.addWorkout;
 import jFrame.main.Sleep.addSleep;
-import jFrame.main.Water.addDrink;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -23,6 +25,7 @@ public class Display extends JFrame
 {
 	ImageIcon runningMan = new ImageIcon("/resources/man.png");
 	boolean loggedin = false;
+	public static waterIntakeTracker waterTrk = new waterIntakeTracker();
 
 	public Display()
 	{
@@ -65,9 +68,26 @@ public class Display extends JFrame
 
 	private void addDrinkButtonMouseReleased(MouseEvent e)
 	{
-		addDrink drink = new addDrink();
-		drink.setVisible(true);
-		drink.setResizable(false);
+		JTextField[] fieldsArr = {addDrinkField};
+		if( fieldChecks.empty(fieldsArr) )
+		{
+			try
+			{
+				int drink = Integer.parseInt( addDrinkField.getText());
+				waterTrk.addDrink(drink);
+				drankField.setText(waterTrk.getTotal());
+				leftField.setText(waterTrk.getRemaining());
+				addDrinkField.setText("");
+
+			}
+			catch ( Exception drinkEx )
+			{
+				JOptionPane.showMessageDialog(this, "Invalid input.");
+				addDrinkField.setText("");
+			}
+
+		}
+		else JOptionPane.showMessageDialog(this, "Type an amount in oz to add a drink.");
 	}
 
 	private void addWorkoutButtonMouseReleased(MouseEvent e)
@@ -90,6 +110,12 @@ public class Display extends JFrame
 		addMeal mw = new addMeal();
 		mw.setVisible(true);
 		mw.setResizable(false);
+		mw.setEnabled(true);
+
+		while(mw.isEnabled())
+		{
+
+		}
 
 	}
 
@@ -110,6 +136,7 @@ public class Display extends JFrame
 		addWorkoutButton = new JButton();
 		caloriePanel = new JPanel();
 		addMealButton = new JButton();
+		calorieField = new JTextField();
 		sleepPanel = new JPanel();
 		addSleepButton = new JButton();
 		waterPanel = new JPanel();
@@ -117,9 +144,14 @@ public class Display extends JFrame
 		ammountDrankLabel = new JLabel();
 		goalLabel = new JLabel();
 		leftLabel = new JLabel();
-		drankFeild = new JTextField();
 		goalField = new JTextField();
 		leftField = new JTextField();
+		ozLabel1 = new JLabel();
+		ozLabel2 = new JLabel();
+		ozLabel3 = new JLabel();
+		addDrinkField = new JTextField();
+		ozLabel4 = new JLabel();
+		drankField = new JTextField();
 
 		//======== this ========
 		setTitle("FitTrack");
@@ -267,19 +299,30 @@ public class Display extends JFrame
 					}
 				});
 
+				//---- calorieField ----
+				calorieField.setText("0");
+				calorieField.setEditable(false);
+
 				GroupLayout caloriePanelLayout = new GroupLayout(caloriePanel);
 				caloriePanel.setLayout(caloriePanelLayout);
 				caloriePanelLayout.setHorizontalGroup(
 					caloriePanelLayout.createParallelGroup()
 						.addGroup(caloriePanelLayout.createSequentialGroup()
-							.addContainerGap()
-							.addComponent(addMealButton)
-							.addContainerGap(448, Short.MAX_VALUE))
+							.addGroup(caloriePanelLayout.createParallelGroup()
+								.addGroup(caloriePanelLayout.createSequentialGroup()
+									.addContainerGap()
+									.addComponent(addMealButton))
+								.addGroup(caloriePanelLayout.createSequentialGroup()
+									.addGap(169, 169, 169)
+									.addComponent(calorieField, GroupLayout.PREFERRED_SIZE, 203, GroupLayout.PREFERRED_SIZE)))
+							.addContainerGap(169, Short.MAX_VALUE))
 				);
 				caloriePanelLayout.setVerticalGroup(
 					caloriePanelLayout.createParallelGroup()
 						.addGroup(GroupLayout.Alignment.TRAILING, caloriePanelLayout.createSequentialGroup()
-							.addContainerGap(305, Short.MAX_VALUE)
+							.addGap(123, 123, 123)
+							.addComponent(calorieField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 158, Short.MAX_VALUE)
 							.addComponent(addMealButton)
 							.addContainerGap())
 				);
@@ -341,14 +384,29 @@ public class Display extends JFrame
 				leftLabel.setText("Ammount Left");
 				leftLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
 
-				//---- drankFeild ----
-				drankFeild.setEditable(false);
-
 				//---- goalField ----
 				goalField.setEditable(false);
+				goalField.setText("64");
 
 				//---- leftField ----
 				leftField.setEditable(false);
+				leftField.setText("64");
+
+				//---- ozLabel1 ----
+				ozLabel1.setText("oz");
+
+				//---- ozLabel2 ----
+				ozLabel2.setText("oz");
+
+				//---- ozLabel3 ----
+				ozLabel3.setText("oz");
+
+				//---- ozLabel4 ----
+				ozLabel4.setText("oz");
+
+				//---- drankField ----
+				drankField.setEditable(false);
+				drankField.setText("0");
 
 				GroupLayout waterPanelLayout = new GroupLayout(waterPanel);
 				waterPanel.setLayout(waterPanelLayout);
@@ -357,21 +415,23 @@ public class Display extends JFrame
 						.addGroup(waterPanelLayout.createSequentialGroup()
 							.addGap(56, 56, 56)
 							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-								.addComponent(goalField, GroupLayout.PREFERRED_SIZE, 156, GroupLayout.PREFERRED_SIZE)
-								.addGroup(waterPanelLayout.createSequentialGroup()
-									.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-										.addComponent(addDrinkButton)
-										.addComponent(leftLabel)
-										.addComponent(goalLabel)
-										.addComponent(ammountDrankLabel))
-									.addGroup(waterPanelLayout.createParallelGroup()
-										.addGroup(waterPanelLayout.createSequentialGroup()
-											.addGap(40, 40, 40)
-											.addComponent(drankFeild, GroupLayout.PREFERRED_SIZE, 156, GroupLayout.PREFERRED_SIZE))
-										.addGroup(GroupLayout.Alignment.TRAILING, waterPanelLayout.createSequentialGroup()
-											.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-											.addComponent(leftField, GroupLayout.PREFERRED_SIZE, 156, GroupLayout.PREFERRED_SIZE)))))
-							.addContainerGap(96, Short.MAX_VALUE))
+								.addComponent(addDrinkButton)
+								.addComponent(leftLabel)
+								.addComponent(goalLabel)
+								.addComponent(ammountDrankLabel))
+							.addGap(40, 40, 40)
+							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+								.addComponent(goalField, GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+								.addComponent(leftField, GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+								.addComponent(addDrinkField, GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+								.addComponent(drankField, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE))
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+							.addGroup(waterPanelLayout.createParallelGroup()
+								.addComponent(ozLabel1)
+								.addComponent(ozLabel2)
+								.addComponent(ozLabel3)
+								.addComponent(ozLabel4))
+							.addGap(92, 92, 92))
 				);
 				waterPanelLayout.setVerticalGroup(
 					waterPanelLayout.createParallelGroup()
@@ -379,17 +439,23 @@ public class Display extends JFrame
 							.addGap(64, 64, 64)
 							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 								.addComponent(ammountDrankLabel)
-								.addComponent(drankFeild, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+								.addComponent(ozLabel1)
+								.addComponent(drankField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 							.addGap(18, 18, 18)
 							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 								.addComponent(goalLabel)
-								.addComponent(goalField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+								.addComponent(goalField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addComponent(ozLabel2))
 							.addGap(18, 18, 18)
 							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 								.addComponent(leftLabel)
-								.addComponent(leftField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+								.addComponent(leftField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addComponent(ozLabel3))
 							.addGap(18, 18, 18)
-							.addComponent(addDrinkButton)
+							.addGroup(waterPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+								.addComponent(addDrinkButton)
+								.addComponent(addDrinkField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addComponent(ozLabel4))
 							.addContainerGap(115, Short.MAX_VALUE))
 				);
 			}
@@ -430,6 +496,7 @@ public class Display extends JFrame
 	private JButton addWorkoutButton;
 	private JPanel caloriePanel;
 	private JButton addMealButton;
+	private JTextField calorieField;
 	private JPanel sleepPanel;
 	private JButton addSleepButton;
 	private JPanel waterPanel;
@@ -437,8 +504,13 @@ public class Display extends JFrame
 	private JLabel ammountDrankLabel;
 	private JLabel goalLabel;
 	private JLabel leftLabel;
-	private JTextField drankFeild;
 	private JTextField goalField;
 	private JTextField leftField;
+	private JLabel ozLabel1;
+	private JLabel ozLabel2;
+	private JLabel ozLabel3;
+	private JTextField addDrinkField;
+	private JLabel ozLabel4;
+	private JTextField drankField;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 }

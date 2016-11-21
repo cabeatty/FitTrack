@@ -5,18 +5,28 @@ package FitTrack.Components;
  */
 public class waterIntakeTracker
 {
+	private static int total;  //Total water drank
+	private static int rem;    //Total water remaining to drink
+
+	public waterIntakeTracker()
+	{
+		total = 0;
+		rem = 64;
+	}
+
 	public static void addDrink(int drink)
 	{
-
+		 total = total + drink;
+		 rem = rem - drink;
 	}
 
-	public static int getTotal()
+	public static String getTotal()
 	{
-		return 64;
+		return Integer.toString(total);
 	}
 
-	public static int getRemaining()
+	public static String getRemaining()
 	{
-		return 0;
+		return Integer.toString(rem);
 	}
 }

@@ -1,0 +1,61 @@
+JFDML JFormDesigner: "5.2.4.1.329" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par l {comp timeLabel::::191:x, comp timeField::::191:x, seq l {comp addButton:::p::p, space ::67:x, comp cancelButton:::p::p}, comp typeBox::t::191:x, comp intensityBox::l::191:x, comp workoutType::l::191:x, comp label1::::191:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :p:16:p, comp workoutType:::p::p, space :::p, comp typeBox:::p::p, space :::p, comp label1:::p::p, space :::p, comp intensityBox:::p:26:p, space :::p, comp timeLabel:::p:16:p, space :::p, comp timeField:::p::p, space ::11:x, par b {comp addButton::b:p::p, comp cancelButton::b:p::p}, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Add Workout"
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "intensityBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: " "
+					addElement( " " )
+					addElement( "High" )
+					addElement( "Medium" )
+					addElement( "Low" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "workoutType"
+				"text": "Select workout type"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "timeLabel"
+				"text": "Duration? (In minutes)"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "timeField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addButton"
+				"text": "Add"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "addButtonMouseReleased", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Select intensity"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "typeBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: " "
+					addElement( " " )
+					addElement( "Cardio" )
+					addElement( "Muscle Building" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancelButton"
+				"text": "Cancel"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "cancelButtonMouseReleased", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 85, 85 )
+			"size": new java.awt.Dimension( 215, 245 )
+		} )
+	}
+}

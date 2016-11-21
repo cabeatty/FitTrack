@@ -1,20 +1,20 @@
-JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112-release" encoding: "UTF-8"
+JFDML JFormDesigner: "5.2.4.1.329" Java: "1.8.0_112-release" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq {space :::p, par l {comp calorieField::::171:x, seq {comp mealLabel:::p::p, space :0:0:x}, seq l {comp addButton:::p::p, space ::47:x, comp cancelButton:::p::p}}, space :::p}}"
-			"$verticalGroup": "par l {seq l {space :::p, comp mealLabel:::p::p, space :::p, comp calorieField:::p::p, space u:::p, par b {comp addButton::b:p::p, comp cancelButton::b:p::p}, space ::3:x}}"
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp hoursLabel::::216:x, comp sleepField::l::216:x, seq l {comp addButton:::p::p, space ::92:x, comp cancelButton:::p::p}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp hoursLabel:::p::p, space :::p, comp sleepField:::p::p, space ::24:x, par b {comp addButton::b:p::p, comp cancelButton::b:p::p}, space :::p}}"
 		} ) {
 			name: "this"
-			"title": "Add Meal"
+			"title": "Add Sleep"
 			add( new FormComponent( "javax.swing.JLabel" ) {
-				name: "mealLabel"
-				"text": "Number of calories"
+				name: "hoursLabel"
+				"text": "How  many hours did you sleep?"
 			} )
 			add( new FormComponent( "javax.swing.JTextField" ) {
-				name: "calorieField"
+				name: "sleepField"
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "addButton"
@@ -27,8 +27,8 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "cancelButtonMouseReleased", true ) )
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 225, 125 )
-			"size": new java.awt.Dimension( 195, 125 )
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 240, 140 )
 		} )
 	}
 }
