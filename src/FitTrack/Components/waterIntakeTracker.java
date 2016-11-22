@@ -29,4 +29,9 @@ public class waterIntakeTracker
 	{
 		return Integer.toString(rem);
 	}
+
+	public static int getRemainingInt()
+	{
+		return rem;
+	}
 }

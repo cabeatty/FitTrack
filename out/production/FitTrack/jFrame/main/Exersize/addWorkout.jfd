@@ -1,27 +1,17 @@
-JFDML JFormDesigner: "5.2.4.1.329" Java: "1.8.0_112-release" encoding: "UTF-8"
+JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112-release" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :::p, par l {comp timeLabel::::191:x, comp timeField::::191:x, seq l {comp addButton:::p::p, space ::67:x, comp cancelButton:::p::p}, comp typeBox::t::191:x, comp intensityBox::l::191:x, comp workoutType::l::191:x, comp label1::::191:x}, space :::p}}"
-			"$verticalGroup": "par l {seq l {space :p:16:p, comp workoutType:::p::p, space :::p, comp typeBox:::p::p, space :::p, comp label1:::p::p, space :::p, comp intensityBox:::p:26:p, space :::p, comp timeLabel:::p:16:p, space :::p, comp timeField:::p::p, space ::11:x, par b {comp addButton::b:p::p, comp cancelButton::b:p::p}, space :::p}}"
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq l {comp addButton:::p::p, space ::67:x, comp cancelButton:::p::p}, comp bpmLabel::l::191:x, comp timeLabel::l::191:x, comp timeField::l::191:x, comp bpmField::l::191:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp bpmLabel:::p::p, space :::p, comp bpmField:::p::p, space u:::p, comp timeLabel:::p:16:p, space :::p, comp timeField:::p::p, space :p:28:p, par b {comp addButton::b:p::p, comp cancelButton::b:p::p}, space ::4:x}}"
 		} ) {
 			name: "this"
 			"title": "Add Workout"
-			add( new FormComponent( "javax.swing.JComboBox" ) {
-				name: "intensityBox"
-				"model": new javax.swing.DefaultComboBoxModel {
-					selectedItem: " "
-					addElement( " " )
-					addElement( "High" )
-					addElement( "Medium" )
-					addElement( "Low" )
-				}
-			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
-				name: "workoutType"
-				"text": "Select workout type"
+				name: "bpmLabel"
+				"text": "Heart Rate (In BPM)"
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "timeLabel"
@@ -35,27 +25,17 @@ new FormModel {
 				"text": "Add"
 				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "addButtonMouseReleased", true ) )
 			} )
-			add( new FormComponent( "javax.swing.JLabel" ) {
-				name: "label1"
-				"text": "Select intensity"
-			} )
-			add( new FormComponent( "javax.swing.JComboBox" ) {
-				name: "typeBox"
-				"model": new javax.swing.DefaultComboBoxModel {
-					selectedItem: " "
-					addElement( " " )
-					addElement( "Cardio" )
-					addElement( "Muscle Building" )
-				}
-			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "cancelButton"
 				"text": "Cancel"
 				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "cancelButtonMouseReleased", true ) )
 			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bpmField"
+			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 85, 85 )
-			"size": new java.awt.Dimension( 215, 245 )
+			"size": new java.awt.Dimension( 215, 200 )
 		} )
 	}
 }

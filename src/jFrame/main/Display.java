@@ -25,13 +25,13 @@ import javax.swing.GroupLayout;
  */
 public class Display extends JFrame
 {
-	ImageIcon runningMan = new ImageIcon("/resources/man.png");
 	public static User usr;
 
 	public static boolean LOGGEDINFLAG = false;
 	public static waterIntakeTracker waterTrk = new waterIntakeTracker();
 	public static sleepTracker sleepTrk = new sleepTracker();
 	public static calorieTracker calTrk;
+	public static exerciseTracker excTrk;
 
 	public Display()
 	{
@@ -72,7 +72,6 @@ public class Display extends JFrame
 	{
 		if (LOGGEDINFLAG == false)
 		{
-			System.out.println("Create Account Pressed");
 			createAcc cat = new createAcc();
 			cat.setVisible(true);
 			cat.setResizable(false);
@@ -102,11 +101,14 @@ public class Display extends JFrame
 			logoutButton.setVisible(true);
 			loginButton.setVisible(false);
 			calTrk = new calorieTracker(usr);
+			excTrk = new exerciseTracker(usr);
 			diffCalField.setText(calTrk.getDiff());
 			totalCalField.setText(calTrk.getTotal());
 			targetCalField.setText(calTrk.getTarget());
 		}
 	}
+
+	//-----------------Water intake tracker---------------------------------------
 
 	private void addDrinkButtonMouseReleased(MouseEvent e)
 	{
@@ -123,6 +125,11 @@ public class Display extends JFrame
 					leftField.setText(waterTrk.getRemaining());
 					addDrinkField.setText("");
 
+					if(waterTrk.getRemainingInt() <= 0)
+					{
+						JOptionPane.showMessageDialog(this, "Goal met.");
+					}
+
 				}
 				catch (Exception drinkEx)
 				{
@@ -133,8 +140,14 @@ public class Display extends JFrame
 			}
 			else JOptionPane.showMessageDialog(this, "Type an amount in oz to add a drink.");
 		}
-		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
+		else
+		{
+			JOptionPane.showMessageDialog(this, "Must log in to use functionality");
+			addDrinkField.setText("");
+		}
 	}
+
+	//-----------------Workout Tracker---------------------------------------
 
 	private void addWorkoutButtonMouseReleased(MouseEvent e)
 	{
@@ -146,7 +159,12 @@ public class Display extends JFrame
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 	}
+	public static void populateWorkoutField()
+	{
+		//TODO, this need to be done
+	}
 
+	//-----------------Sleep Tracker---------------------------------------
 
 	private void addSleepButtonMouseReleased(MouseEvent e)
 	{
@@ -172,6 +190,8 @@ public class Display extends JFrame
 			sleepField.setText(sleepTrk.toString());
 		}
 	}
+
+	//-----------------Calorie tracker---------------------------------------
 
 	private void addMealButtonMouseReleased(MouseEvent e)
 	{
@@ -257,15 +277,6 @@ public class Display extends JFrame
 
 			//======== homePanel ========
 			{
-
-				// JFormDesigner evaluation mark
-				homePanel.setBorder(new javax.swing.border.CompoundBorder(
-					new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-						"JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-						javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-						java.awt.Color.red), homePanel.getBorder())); homePanel.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
-
-
 				//---- homeLabel ----
 				homeLabel.setText("FitTrack");
 				homeLabel.setFont(new Font("Ubuntu", Font.PLAIN, 48));
@@ -293,7 +304,7 @@ public class Display extends JFrame
 				});
 
 				//---- iconLabel ----
-				iconLabel.setIcon(new ImageIcon(getClass().getResource("/resources/man2.png")));
+				iconLabel.setIcon(new ImageIcon(getClass().getResource("/resources/man.png")));
 
 				//---- logoutButton ----
 				logoutButton.setText("Logout");
@@ -673,7 +684,7 @@ public class Display extends JFrame
 	private JPanel exersizePanel;
 	private JButton addWorkoutButton;
 	private JScrollPane workoutScrollPane;
-	private JTextArea workoutField;
+	private static JTextArea workoutField;
 	private JPanel caloriePanel;
 	private JButton addMealButton;
 	private JLabel mealListLabel;

@@ -43,15 +43,24 @@ public class calorieTracker
 
 	public static String getTarget()
 	{
+		//height/weight conversion, for accuracy
+		String[] arr =String.valueOf(height).split("\\.");
+		int[] intArr = new int[2];
+		intArr[0] = Integer.parseInt(arr[0]);
+		intArr[1] = Integer.parseInt(arr[1]);
+
+		double adjHeight = 2.54 * ( ( intArr[0]*12 ) + intArr[1] );
+		double adjWeight = (weight/2.2);
+
 		if(gender.equalsIgnoreCase("male"))
 		{
-			BMR = 66 + (6.2 * weight) + (12.7 * height) - (6.76 * age);  //calculation of calories available in a day for a man
-			return Double.toString(BMR);
+			BMR = 66 + (13.75 * adjWeight) + (5 * adjHeight) - (6.75 * age);  //calculation of calories available in a day for a man
+			return Double.toString(BMR*1.2);
 		}
 		else
 		{
-			BMR = 655.1 + (4.35 * weight) + (4.7 * height) - (4.7 * age);  //calculation of calories available in a day for a woman
-			return Double.toString(BMR);
+			BMR = 655.1 + (9.56 * adjWeight) + (1.84 * adjHeight) - (4.67 * age);  //calculation of calories available in a day for a woman
+			return Double.toString(BMR*1.2);
 		}
 	}
 

@@ -185,8 +185,7 @@ public class Display extends JFrame
 
 	private void initComponents()
 	{
-		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-		// Generated using JFormDesigner Evaluation license - Colin Beatty
+
 		tabbedPane1 = new JTabbedPane();
 		homePanel = new JPanel();
 		homeLabel = new JLabel();
@@ -240,11 +239,11 @@ public class Display extends JFrame
 			{
 
 				// JFormDesigner evaluation mark
-				homePanel.setBorder(new javax.swing.border.CompoundBorder(
-						new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-								"JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-								javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-								java.awt.Color.red), homePanel.getBorder())); homePanel.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+				//homePanel.setBorder(new javax.swing.border.CompoundBorder(
+				//		new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+				//				"JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+				//				javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+				//				java.awt.Color.red), homePanel.getBorder())); homePanel.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
 
 
 				//---- homeLabel ----
