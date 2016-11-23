@@ -38,7 +38,10 @@ public class calorieTracker
 
 	public static String getTotal()
 	{
-		return Double.toString(calories);
+		double rCal = calories;
+		rCal = Math.round(rCal * 100);
+		rCal = rCal/100;
+		return Double.toString(rCal);
 	}
 
 	public static String getTarget()
@@ -54,28 +57,34 @@ public class calorieTracker
 
 		if(gender.equalsIgnoreCase("male"))
 		{
-			BMR = 66 + (13.75 * adjWeight) + (5 * adjHeight) - (6.75 * age);  //calculation of calories available in a day for a man
-			return Double.toString(BMR*1.2);
+			BMR = (66 + (13.75 * adjWeight) + (5 * adjHeight) - (6.75 * age)) * 1.2;  //calculation of calories available in a day for a man
+
 		}
 		else
 		{
-			BMR = 655.1 + (9.56 * adjWeight) + (1.84 * adjHeight) - (4.67 * age);  //calculation of calories available in a day for a woman
-			return Double.toString(BMR*1.2);
+			BMR = (655.1 + (9.56 * adjWeight) + (1.84 * adjHeight) - (4.67 * age)) * 1.2;  //calculation of calories available in a day for a woman
 		}
+
+
+		double rBMR = Math.round(BMR * 100);
+		rBMR = rBMR/100;
+		return Double.toString(rBMR);
 	}
 
 	public static String getDiff()
 	{
 		double total = BMR - calories;
+		total = Math.round(total * 100);
+		total = total/100;
 		return Double.toString(total);
 	}
 
 	public static void addMeal(double cal)
 	{
 		calories += cal;
-		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm ");
+		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
 		Date date = new Date();
-		String mealData = df.format(date).toString() + " : " + cal + " calories eaten.";
+		String mealData = "Date: " + df.format(date).toString() + " | Calories eaten: " + cal;
 		meals.add(mealData);
 	}
 

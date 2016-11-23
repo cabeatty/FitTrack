@@ -4,6 +4,7 @@
 
 package jFrame.main.Home.login;
 
+import FitTrack.Components.User;
 import jFrame.Utilities.fieldChecks;
 import jFrame.main.Display;
 
@@ -33,8 +34,11 @@ public class login extends JFrame
 				{
 					String uName = uNameField.getText();
 					String pWord = pWordField.getText();
-					//Display.LOGGEDINFLAG = true;
-					//Display.updateLoginStatus();
+
+					User cabeatty = new User("cabeatty", "male", 21, 175, 5.11, "pass", "pass");
+					Display.usr = cabeatty;
+					Display.LOGGEDINFLAG = true;
+					Display.updateLoginStatus();
 					JOptionPane.showMessageDialog(this, uName + " logged in.");
 					this.dispose();
 				}

@@ -41,9 +41,13 @@ public class exerciseTracker
 			calBurn = ((age * 0.074) - (weight * 0.05741) + (bpm * 0.4472) - 20.4022) * time / 4.184;
 		}
 
-		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm ");
+		//code to round the double up to two decimal places
+		calBurn = Math.round(calBurn * 100);
+		calBurn = calBurn/100;
+
+		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
 		Date date = new Date();
-		String exercise = df.format(date).toString() + " | Duration:  " + time + ", Calories burnt: "  + calBurn;
+		String exercise = "Date: " + df.format(date).toString() + " | Duration: " + time + "minutes | Calories burnt: "  + calBurn;
 		workoutData.add(exercise);
 	}
 

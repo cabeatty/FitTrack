@@ -31,7 +31,7 @@ public class addSleep extends JFrame
 			try
 			{
 				Display.sleepTrk.addSleepHistory(Integer.parseInt(sleepField.getText()));
-				JOptionPane.showMessageDialog(this, "Added sleep.");
+				//JOptionPane.showMessageDialog(this, "Added sleep.");
 				this.dispose();
 				Display.populateSleepField();
 				System.out.println(Display.sleepTrk.toString());

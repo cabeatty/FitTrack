@@ -29,7 +29,7 @@ public class addMeal extends JFrame
 		if ( fieldChecks.empty(fieldsArr) )
 		{
 			Display.calTrk.addMeal(Double.parseDouble(calorieField.getText()));
-			JOptionPane.showMessageDialog(this, "Meal added.");
+			//JOptionPane.showMessageDialog(this, "Meal added.");
 			Display.populateMealField();
 			this.dispose();
 		}

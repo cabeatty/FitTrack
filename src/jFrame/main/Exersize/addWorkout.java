@@ -8,6 +8,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.GroupLayout;
+
+import jFrame.main.Display;
 import jFrame.Utilities.fieldChecks;
 
 /**
@@ -29,6 +31,8 @@ public class addWorkout extends JFrame
 			{
 				int bpm = Integer.parseInt(bpmField.getText());
 				int time = Integer.parseInt(timeField.getText());
+				Display.excTrk.addExercise(bpm, time);
+				Display.populateWorkoutField();
 				//JOptionPane.showMessageDialog(this, "Workout added.");
 				this.dispose();
 			}
