@@ -4,15 +4,13 @@
 
 package jFrame.main;
 
-import javax.swing.event.*;
-
 import FitTrack.Components.*;
-import jFrame.Utilities.fieldChecks;
-import jFrame.main.Home.createAcc.createAcc;
-import jFrame.main.Home.login.login;
-import jFrame.main.Calories.addMeal;
-import jFrame.main.Exersize.addWorkout;
-import jFrame.main.Sleep.addSleep;
+import FitTrack.Main.guiMain.Utilities.fieldChecks;
+import FitTrack.Main.guiMain.Components.createAcc;
+import FitTrack.Main.guiMain.Components.login;
+import FitTrack.Main.guiMain.Components.addMeal;
+import FitTrack.Main.guiMain.Components.addWorkout;
+import FitTrack.Main.guiMain.Components.addSleep;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -229,6 +227,10 @@ public class Display extends JFrame
 		}
 	}
 
+	private void mapButtonMouseReleased(MouseEvent e) {
+		// TODO add your code here
+	}
+
 	//-----------------JForm shit---------------------------------------
 
 	private void initComponents()
@@ -263,6 +265,7 @@ public class Display extends JFrame
 		addSleepButton = new JButton();
 		sleepScrollPane = new JScrollPane();
 		sleepField = new JTextArea();
+		mapButton = new JButton();
 		waterPanel = new JPanel();
 		addDrinkButton = new JButton();
 		ammountDrankLabel = new JLabel();
@@ -286,6 +289,15 @@ public class Display extends JFrame
 
 			//======== homePanel ========
 			{
+
+				// JFormDesigner evaluation mark
+				homePanel.setBorder(new javax.swing.border.CompoundBorder(
+					new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+						"JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+						javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+						java.awt.Color.red), homePanel.getBorder())); homePanel.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+
+
 				//---- homeLabel ----
 				homeLabel.setText("FitTrack");
 				homeLabel.setFont(new Font("Ubuntu", Font.PLAIN, 48));
@@ -313,7 +325,7 @@ public class Display extends JFrame
 				});
 
 				//---- iconLabel ----
-				iconLabel.setIcon(new ImageIcon(getClass().getResource("/resources/man.png")));
+				iconLabel.setIcon(new ImageIcon(getClass().getResource("/resources/man2.png")));
 
 				//---- logoutButton ----
 				logoutButton.setText("Logout");
@@ -325,8 +337,7 @@ public class Display extends JFrame
 				});
 
 				//---- loginStatus ----
-				loginStatus.setText("Not logged in.");
-				loginStatus.setFont(new Font("Ubuntu", Font.PLAIN, 14));
+				loginStatus.setText("text");
 
 				GroupLayout homePanelLayout = new GroupLayout(homePanel);
 				homePanel.setLayout(homePanelLayout);
@@ -417,7 +428,7 @@ public class Display extends JFrame
 							.addContainerGap())
 				);
 			}
-			tabbedPane1.addTab("Exercise", exersizePanel);
+			tabbedPane1.addTab("Exersize", exersizePanel);
 
 			//======== caloriePanel ========
 			{
@@ -455,7 +466,7 @@ public class Display extends JFrame
 				targetCalField.setEditable(false);
 
 				//---- diffCalLabel ----
-				diffCalLabel.setText("Remaining Calories");
+				diffCalLabel.setText("Difference");
 
 				//---- diffCalField ----
 				diffCalField.setEditable(false);
@@ -531,6 +542,15 @@ public class Display extends JFrame
 					sleepScrollPane.setViewportView(sleepField);
 				}
 
+				//---- mapButton ----
+				mapButton.setText("Show Trend");
+				mapButton.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						mapButtonMouseReleased(e);
+					}
+				});
+
 				GroupLayout sleepPanelLayout = new GroupLayout(sleepPanel);
 				sleepPanel.setLayout(sleepPanelLayout);
 				sleepPanelLayout.setHorizontalGroup(
@@ -540,7 +560,8 @@ public class Display extends JFrame
 							.addGroup(sleepPanelLayout.createParallelGroup()
 								.addGroup(sleepPanelLayout.createSequentialGroup()
 									.addComponent(addSleepButton)
-									.addGap(0, 438, Short.MAX_VALUE))
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 384, Short.MAX_VALUE)
+									.addComponent(mapButton))
 								.addComponent(sleepScrollPane, GroupLayout.DEFAULT_SIZE, 529, Short.MAX_VALUE))
 							.addContainerGap())
 				);
@@ -550,7 +571,9 @@ public class Display extends JFrame
 							.addContainerGap()
 							.addComponent(sleepScrollPane, GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
 							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-							.addComponent(addSleepButton)
+							.addGroup(sleepPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+								.addComponent(addSleepButton)
+								.addComponent(mapButton))
 							.addContainerGap())
 				);
 			}
@@ -573,11 +596,11 @@ public class Display extends JFrame
 				ammountDrankLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
 
 				//---- goalLabel ----
-				goalLabel.setText("Goal Amount");
+				goalLabel.setText("Goal Ammount");
 				goalLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
 
 				//---- leftLabel ----
-				leftLabel.setText("Amount Left");
+				leftLabel.setText("Ammount Left");
 				leftLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20));
 
 				//---- goalField ----
@@ -662,7 +685,7 @@ public class Display extends JFrame
 		contentPane.setLayout(contentPaneLayout);
 		contentPaneLayout.setHorizontalGroup(
 			contentPaneLayout.createParallelGroup()
-				.addComponent(tabbedPane1, GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
+				.addComponent(tabbedPane1)
 		);
 		contentPaneLayout.setVerticalGroup(
 			contentPaneLayout.createParallelGroup()
@@ -686,7 +709,7 @@ public class Display extends JFrame
 	private JLabel homeLabel;
 	private JLabel homeSubLabel;
 	private static JButton loginButton;
-	private static JButton createAccButton;
+	private JButton createAccButton;
 	private JLabel iconLabel;
 	private static JButton logoutButton;
 	private static JLabel loginStatus;
@@ -699,7 +722,7 @@ public class Display extends JFrame
 	private JLabel mealListLabel;
 	private JScrollPane mealsScrollPane;
 	private static JTextArea mealsField;
-	private  JLabel totalCalLabel;
+	private JLabel totalCalLabel;
 	private static JTextField totalCalField;
 	private JLabel targetCalLabel;
 	private static JTextField targetCalField;
@@ -709,6 +732,7 @@ public class Display extends JFrame
 	private JButton addSleepButton;
 	private JScrollPane sleepScrollPane;
 	private static JTextArea sleepField;
+	private JButton mapButton;
 	private JPanel waterPanel;
 	private JButton addDrinkButton;
 	private JLabel ammountDrankLabel;

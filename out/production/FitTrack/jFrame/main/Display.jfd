@@ -4,7 +4,7 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {comp tabbedPane1::l::543:x}"
+			"$horizontalGroup": "par l {comp tabbedPane1::l:::x}"
 			"$verticalGroup": "par l {comp tabbedPane1::l:::x}"
 		} ) {
 			name: "this"
@@ -123,8 +123,8 @@ new FormModel {
 					"title": "Calories"
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq l {space :::p, par l {seq {comp addSleepButton:::p::p, space :0:438:x}, comp sleepScrollPane::::529:x}, space :::p}}"
-					"$verticalGroup": "par l {seq t {space :::p, comp sleepScrollPane::::293:x, space :::p, comp addSleepButton:::p::p, space :::p}}"
+					"$horizontalGroup": "par l {seq l {space :::p, par l {seq {comp addSleepButton:::p::p, space ::384:x, comp mapButton:::p::p}, comp sleepScrollPane::::529:x}, space :::p}}"
+					"$verticalGroup": "par l {seq t {space :::p, comp sleepScrollPane::::293:x, space :::p, par b {comp addSleepButton::b:p::p, comp mapButton::b:p::p}, space :::p}}"
 				} ) {
 					name: "sleepPanel"
 					add( new FormComponent( "javax.swing.JButton" ) {
@@ -138,6 +138,11 @@ new FormModel {
 							name: "sleepField"
 							"editable": false
 						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "mapButton"
+						"text": "Show Trend"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "mapButtonMouseReleased", true ) )
 					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Sleep"

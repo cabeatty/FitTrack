@@ -4,15 +4,9 @@
 
 package FitTrack.Main.guiMain;
 
-import javax.swing.event.*;
-
 import FitTrack.Components.*;
-import jFrame.Utilities.fieldChecks;
-import jFrame.main.Home.createAcc.createAcc;
-import jFrame.main.Home.login.login;
-import jFrame.main.Calories.addMeal;
-import jFrame.main.Exersize.addWorkout;
-import jFrame.main.Sleep.addSleep;
+import FitTrack.Main.guiMain.Components.*;
+import FitTrack.Main.guiMain.Utilities.fieldChecks;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -94,7 +88,7 @@ public class Display extends JFrame
 		}
 		else
 		{
-			loginStatus.setText("Logged in as: " + usr.getuName());
+			loginStatus.setText(usr.getuName());
 			logoutButton.setVisible(true);
 			loginButton.setVisible(false);
 			calTrk = new calorieTracker(usr);
@@ -197,6 +191,13 @@ public class Display extends JFrame
 			sleepField.setText(sleepTrk.toString());
 		}
 	}
+	private void mapButtonMouseReleased(MouseEvent e)
+	{
+		sleepMapper slpMap = new sleepMapper();
+		slpMap.setVisible(true);
+		slpMap.setResizable(false);
+	}
+
 
 	//-----------------Calorie tracker---------------------------------------
 
@@ -261,6 +262,7 @@ public class Display extends JFrame
 		diffCalField = new JTextField();
 		sleepPanel = new JPanel();
 		addSleepButton = new JButton();
+		mapButton = new JButton();
 		sleepScrollPane = new JScrollPane();
 		sleepField = new JTextArea();
 		waterPanel = new JPanel();
@@ -325,7 +327,7 @@ public class Display extends JFrame
 				});
 
 				//---- loginStatus ----
-				loginStatus.setText("Not logged in.");
+				loginStatus.setText("");
 				loginStatus.setFont(new Font("Ubuntu", Font.PLAIN, 14));
 
 				GroupLayout homePanelLayout = new GroupLayout(homePanel);
@@ -523,6 +525,15 @@ public class Display extends JFrame
 					}
 				});
 
+				//---- mapButton ----
+				mapButton.setText("Show Trend");
+				mapButton.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						mapButtonMouseReleased(e);
+					}
+				});
+
 				//======== sleepScrollPane ========
 				{
 
@@ -540,7 +551,8 @@ public class Display extends JFrame
 										.addGroup(sleepPanelLayout.createParallelGroup()
 												.addGroup(sleepPanelLayout.createSequentialGroup()
 														.addComponent(addSleepButton)
-														.addGap(0, 438, Short.MAX_VALUE))
+														.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 384, Short.MAX_VALUE)
+														.addComponent(mapButton))
 												.addComponent(sleepScrollPane, GroupLayout.DEFAULT_SIZE, 529, Short.MAX_VALUE))
 										.addContainerGap())
 				);
@@ -550,12 +562,13 @@ public class Display extends JFrame
 										.addContainerGap()
 										.addComponent(sleepScrollPane, GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
 										.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-										.addComponent(addSleepButton)
+										.addGroup(sleepPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+												.addComponent(addSleepButton)
+												.addComponent(mapButton))
 										.addContainerGap())
 				);
 			}
 			tabbedPane1.addTab("Sleep", sleepPanel);
-
 			//======== waterPanel ========
 			{
 
@@ -707,6 +720,7 @@ public class Display extends JFrame
 	private static JTextField diffCalField;
 	private JPanel sleepPanel;
 	private JButton addSleepButton;
+	private JButton mapButton;
 	private JScrollPane sleepScrollPane;
 	private static JTextArea sleepField;
 	private JPanel waterPanel;

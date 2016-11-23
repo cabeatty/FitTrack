@@ -1,6 +1,6 @@
 package FitTrack.Main;
 
-import jFrame.main.Display;
+import FitTrack.Main.guiMain.Display;
 
 import javax.swing.*;
 
