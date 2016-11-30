@@ -1,3 +1,4 @@
 cabeatty Male 21 175 5.11 cabeatty@oakland.edu cabAdmin 
 genericUser Male 31 180 6.2 genericUser@aol.com genericpass 
 Dr.Patel Male 51 210 5.11 npatel@oakland.edu patelPass 
+Cole Male 21 190 6.1 email@email.com password 

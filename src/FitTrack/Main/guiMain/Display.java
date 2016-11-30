@@ -44,6 +44,7 @@ public class Display extends JFrame
 		if (LOGGEDINFLAG == false)
 		{
 			login lin = new login();
+			lin.setLocationRelativeTo(this);
 			lin.setVisible(true);
 			lin.setResizable(false);
 			this.repaint();
@@ -72,6 +73,7 @@ public class Display extends JFrame
 		if (LOGGEDINFLAG == false)
 		{
 			createAcc cat = new createAcc();
+			cat.setLocationRelativeTo(this);
 			cat.setVisible(true);
 			cat.setResizable(false);
 			this.revalidate();
@@ -169,6 +171,7 @@ public class Display extends JFrame
 		if (LOGGEDINFLAG == true)
 		{
 			addWorkout wout = new addWorkout();
+			wout.setLocationRelativeTo(this);
 			wout.setVisible(true);
 			wout.setResizable(false);
 		}
@@ -196,6 +199,7 @@ public class Display extends JFrame
 		if (LOGGEDINFLAG == true)
 		{
 			addSleep sw = new addSleep();
+			sw.setLocationRelativeTo(this);
 			sw.setVisible(true);
 			sw.setResizable(false);
 		}
@@ -217,10 +221,16 @@ public class Display extends JFrame
 	}
 	private void mapButtonMouseReleased(MouseEvent e)
 	{
-		usr.print();
-		sleepMapper slpMap = new sleepMapper();
-		slpMap.setVisible(true);
-		slpMap.setResizable(false);
+		if (LOGGEDINFLAG == true)
+		{
+			usr.print();
+			sleepMapper slpMap = new sleepMapper();
+			slpMap.setLocationRelativeTo(this);
+			slpMap.setVisible(true);
+			slpMap.setResizable(false);
+		}
+		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
+
 	}
 
 
@@ -231,6 +241,7 @@ public class Display extends JFrame
 		if (LOGGEDINFLAG == true)
 		{
 			addMeal mw = new addMeal();
+			mw.setLocationRelativeTo(this);
 			mw.setVisible(true);
 			mw.setResizable(false);
 		}
