@@ -5,6 +5,7 @@
 package FitTrack.Main.guiMain.Components;
 
 import FitTrack.Components.User;
+import FitTrack.Data.loadUserData;
 import FitTrack.Main.guiMain.Utilities.fieldChecks;
 import FitTrack.Main.guiMain.Display;
 
@@ -28,23 +29,24 @@ public class login extends JFrame
 		JTextField[] fieldsArr = {uNameField, pWordField};
 		if ( fieldChecks.empty( fieldsArr ) )
 		{
-			if (true) //TODO add checker to see if account exists in the database
-			{
-				if (true) //TODO add checker to see if password coencides with entered account
-				{
-					String uName = uNameField.getText();
-					String pWord = pWordField.getText();
+			String uName = uNameField.getText();
+			String pWord = pWordField.getText();
+			User ent = loadUserData.checkLoad(uName, pWord);
 
-					User cabeatty = new User("cabeatty", "male", 21, 175, 5.11, "pass", "pass");
-					Display.usr = cabeatty;
-					Display.LOGGEDINFLAG = true;
-					Display.updateLoginStatus();
-					JOptionPane.showMessageDialog(this, uName + " logged in.");
-					this.dispose();
-				}
-				else JOptionPane.showMessageDialog(this, "Incorrect password.");
+			if (ent != null)
+			{
+				Display.usr = ent;
+				Display.LOGGEDINFLAG = true;
+				Display.updateLoginStatus();
+				JOptionPane.showMessageDialog(this, uName + " logged in.");
+				this.dispose();
 			}
-			else JOptionPane.showMessageDialog(this, "Account " + uNameField.getText() + " not found.");
+			else
+			{
+				JOptionPane.showMessageDialog(this, "Incorrect username or password.");
+				pWordField.setText("");
+				uNameField.setText("");
+			}
 		}
 		else JOptionPane.showMessageDialog(this, "Fill in fields to login");
 	}

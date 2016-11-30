@@ -14,6 +14,7 @@ import javax.swing.GroupLayout;
 
 //Local imports
 import FitTrack.Components.User;
+import FitTrack.Data.loadUserData;
 import FitTrack.Main.guiMain.Utilities.create;
 import FitTrack.Main.guiMain.Utilities.fieldChecks;
 import FitTrack.Main.guiMain.Display;
@@ -30,34 +31,48 @@ public class createAcc extends JFrame
 
 	private void createAccButtonMouseReleased(MouseEvent e)
 	{
-		JTextField[] fieldsArr = {uNameField, ageField, weightField, heightField, emailField1, emailField2, passwordField1, passwordField2};
+		JTextField[] fieldsArr = {uNameField, ageField, weightField, heightField, emailField1,
+									emailField2, passwordField1, passwordField2};
 		JComboBox[] boxesArr = { genderComboBox };
 
 		if ( fieldChecks.empty(fieldsArr) && fieldChecks.boxSelected(boxesArr) )
 		{
 			if ( fieldChecks.equal(emailField1, emailField2) )
 			{
-				if ( fieldChecks.equal(passwordField1, passwordField2) )
+				if( emailField1.getText().contains("@") )
 				{
+					if (fieldChecks.equal(passwordField1, passwordField2))
+					{
+						char[] password = passwordField1.getPassword();
+						if (password.length > 7)
+						{
+							User tempUser = create.createAccount(uNameField, genderComboBox, ageField, weightField,
+									heightField, emailField1, passwordField1);
 
-					User tempUser = create.createAccount(uNameField, genderComboBox, ageField, weightField,
-														 heightField, emailField1, passwordField1);
-					tempUser.print();
-					JOptionPane.showMessageDialog(this, "Account " + uNameField.getText() + " created!");
-					Display.usr = tempUser;
-					Display.LOGGEDINFLAG = true;
-					Display.updateLoginStatus();
-					this.dispose();
+							tempUser = loadUserData.checkAdd(tempUser);
+							if(tempUser != null)
+							{
+								JOptionPane.showMessageDialog(this, "Account " + uNameField.getText() + " created!");
+								Display.usr = tempUser;
+								Display.LOGGEDINFLAG = true;
+								Display.updateLoginStatus();
+								this.dispose();
+							}
+							else
+							{
+								JOptionPane.showMessageDialog(this, "A user with this username already exists.");
+								uNameField.setText("");
+							}
+						}
+						else JOptionPane.showMessageDialog(this, "Password must be at least 8 characters long.");
+					}
+					else JOptionPane.showMessageDialog(this, "Passwords do not match.");
 				}
-				else JOptionPane.showMessageDialog(this, "Passwords do not match.");
+				else JOptionPane.showMessageDialog(this, "Must enter a valid email.");
 			}
 			else JOptionPane.showMessageDialog(this, "Emails do not match.");
 		}
-		else
-		{
-			JOptionPane.showMessageDialog(this, "Fill in all of the fields to create an account.");
-		}
-
+		else JOptionPane.showMessageDialog(this, "Fill in all of the fields to create an account.");
 	}
 
 	private void cancelButtonMouseReleased(MouseEvent e)

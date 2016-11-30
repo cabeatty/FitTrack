@@ -93,12 +93,13 @@ public class User
 
 	public void print()
 	{
-		System.out.println(uName + "\n" + sex + "\n" + age + "\n" +  weight + "\n" + height + "\n" + email + "\n" + password );
+		System.out.println(uName + " " + sex + " " + age + " " +  weight + " " + height + " " + email + " " + password );
 	}
 
-	public String printSt()
+	@Override
+	public String toString()
 	{
-		String s = uName + "\n" + sex + "\n" + age + "\n" +  weight + "\n" + height + "\n" + email + "\n" + password;
+		String s = uName + " " + sex + " " + age + " " +  weight + " " + height + " " + email + " " + password;
 		return s;
 	}
 }

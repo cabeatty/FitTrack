@@ -12,12 +12,12 @@ public class create
 	                                 JTextField email, JTextField password)
 	{
 		String nam = name.getText();
-		String gen = gender.getSelectedItem().toString();
-		int ag = Integer.parseInt(age.getText());
-		int wei = Integer.parseInt(weight.getText());
-		double hei = Double.parseDouble(height.getText());
-		String ema = email.getText();
-		String pass = password.getText();
+		String gen = gender.getSelectedItem().toString().trim();
+		int ag = Integer.parseInt(age.getText().trim());
+		int wei = Integer.parseInt(weight.getText().trim());
+		double hei = Double.parseDouble(height.getText().trim());
+		String ema = email.getText().trim();
+		String pass = password.getText().trim();
 
 		User newUser = new User(nam, gen, ag, wei, hei, ema, pass);
 		return newUser;

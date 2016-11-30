@@ -1,5 +1,5 @@
 /*
- * Created by JFormDesigner on Mon Nov 07 15:32:16 EST 2016
+ * Created by cabeatty on Mon Nov 07 15:32:16 EST 2016
  */
 
 package FitTrack.Main.guiMain;
@@ -11,8 +11,11 @@ import FitTrack.Main.guiMain.Utilities.fieldChecks;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
+//import java.util.HashMap;
+//TODO work on database shit
 import javax.swing.*;
 import javax.swing.GroupLayout;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * @author Colin Beatty
@@ -26,6 +29,8 @@ public class Display extends JFrame
 	public static sleepTracker sleepTrk = new sleepTracker();
 	public static calorieTracker calTrk;
 	public static exerciseTracker excTrk;
+	//public static HashMap userHashMap;
+	//TODO work on database shit
 
 	public Display()
 	{
@@ -85,6 +90,15 @@ public class Display extends JFrame
 			loginStatus.setText("");
 			logoutButton.setVisible(false);
 			loginButton.setVisible(true);
+			deLoadData();
+
+			//Buttons
+			addDrinkButton.setBackground(Color.RED);
+			addMealButton.setBackground(Color.RED);
+			addSleepButton.setBackground(Color.RED);
+			addWorkoutButton.setBackground(Color.RED);
+			mapButton.setBackground(Color.RED);
+
 		}
 		else
 		{
@@ -96,6 +110,16 @@ public class Display extends JFrame
 			diffCalField.setText(calTrk.getDiff());
 			totalCalField.setText(calTrk.getTotal());
 			targetCalField.setText(calTrk.getTarget());
+			loadData();
+
+			//Buttons
+
+			addDrinkButton.setBackground(null);
+			addMealButton.setBackground(null);
+			addSleepButton.setBackground(null);
+			addWorkoutButton.setBackground(null);
+			mapButton.setBackground(null);
+
 		}
 	}
 
@@ -193,6 +217,7 @@ public class Display extends JFrame
 	}
 	private void mapButtonMouseReleased(MouseEvent e)
 	{
+		usr.print();
 		sleepMapper slpMap = new sleepMapper();
 		slpMap.setVisible(true);
 		slpMap.setResizable(false);
@@ -228,6 +253,25 @@ public class Display extends JFrame
 			diffCalField.setText(calTrk.getDiff());
 
 		}
+	}
+
+	//TODO-------------Load & De-Load data and display------------------
+
+	public static void loadData() //TODO load data into the fields from user logged in
+	{
+		if(true)  //if the loaded user has any logged data in the database
+		{
+			sleepField.setText("No sleep logged, click 'Add Sleep' to get started.");
+			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
+			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
+		}
+		else System.out.println("ding");
+	}
+	public static void deLoadData() //TODO make this cache the logged data (this is called when the user logs out)
+	{
+		sleepField.setText("Not logged in, go to the home tab and login to get started.");
+		workoutField.setText("Not logged in, go to the home tab and login to get started.");
+		mealsField.setText("Not logged in, go to the home tab and login to get started.");
 	}
 
 	//-----------------JForm shit---------------------------------------
@@ -686,55 +730,53 @@ public class Display extends JFrame
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents
 
 		logoutButton.setVisible(false);
-		sleepField.setText("No sleep logged, click 'Add Sleep' to get started");
-		workoutField.setText("No workouts logged, click 'Add Workout' to get started");
-		mealsField.setText("No meals logged, click 'Add Meal' to get started");
+		updateLoginStatus();
 		this.repaint();
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
 	// Generated using JFormDesigner Evaluation license - Colin Beatty
-	private JTabbedPane tabbedPane1;
-	private JPanel homePanel;
-	private JLabel homeLabel;
-	private JLabel homeSubLabel;
+	private static JTabbedPane tabbedPane1;
+	private static JPanel homePanel;
+	private static JLabel homeLabel;
+	private static JLabel homeSubLabel;
 	private static JButton loginButton;
 	private static JButton createAccButton;
-	private JLabel iconLabel;
+	private static JLabel iconLabel;
 	private static JButton logoutButton;
 	private static JLabel loginStatus;
-	private JPanel exersizePanel;
-	private JButton addWorkoutButton;
-	private JScrollPane workoutScrollPane;
+	private static JPanel exersizePanel;
+	private static JButton addWorkoutButton;
+	private static JScrollPane workoutScrollPane;
 	private static JTextArea workoutField;
-	private JPanel caloriePanel;
-	private JButton addMealButton;
-	private JLabel mealListLabel;
-	private JScrollPane mealsScrollPane;
+	private static JPanel caloriePanel;
+	private static JButton addMealButton;
+	private static JLabel mealListLabel;
+	private static JScrollPane mealsScrollPane;
 	private static JTextArea mealsField;
-	private  JLabel totalCalLabel;
+	private static JLabel totalCalLabel;
 	private static JTextField totalCalField;
-	private JLabel targetCalLabel;
+	private static JLabel targetCalLabel;
 	private static JTextField targetCalField;
-	private JLabel diffCalLabel;
+	private static JLabel diffCalLabel;
 	private static JTextField diffCalField;
-	private JPanel sleepPanel;
-	private JButton addSleepButton;
-	private JButton mapButton;
-	private JScrollPane sleepScrollPane;
+	private static JPanel sleepPanel;
+	private static JButton addSleepButton;
+	private static JButton mapButton;
+	private static JScrollPane sleepScrollPane;
 	private static JTextArea sleepField;
-	private JPanel waterPanel;
-	private JButton addDrinkButton;
-	private JLabel ammountDrankLabel;
-	private JLabel goalLabel;
-	private JLabel leftLabel;
-	private JTextField goalField;
-	private JTextField leftField;
-	private JLabel ozLabel1;
-	private JLabel ozLabel2;
-	private JLabel ozLabel3;
-	private JTextField addDrinkField;
-	private JLabel ozLabel4;
-	private JTextField drankField;
+	private static JPanel waterPanel;
+	private static JButton addDrinkButton;
+	private static JLabel ammountDrankLabel;
+	private static JLabel goalLabel;
+	private static JLabel leftLabel;
+	private static JTextField goalField;
+	private static JTextField leftField;
+	private static JLabel ozLabel1;
+	private static JLabel ozLabel2;
+	private static JLabel ozLabel3;
+	private static JTextField addDrinkField;
+	private static JLabel ozLabel4;
+	private static JTextField drankField;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 }

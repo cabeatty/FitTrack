@@ -41,9 +41,9 @@ public class exerciseTracker
 		calBurn = Math.round(calBurn * 100);
 		calBurn = calBurn/100;
 
-		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+		DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
 		Date date = new Date();
-		String exercise = "Date: " + df.format(date).toString() + " | Duration: " + time + "minutes | Calories burnt: "  + calBurn;
+		String exercise = "Date: " + df.format(date).toString() + " | Duration: " + time + " min | Calories burnt: "  + calBurn;
 		workoutData.add(exercise);
 	}
 

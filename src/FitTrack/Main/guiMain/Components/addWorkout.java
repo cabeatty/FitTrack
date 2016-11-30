@@ -31,10 +31,13 @@ public class addWorkout extends JFrame
 			{
 				int bpm = Integer.parseInt(bpmField.getText());
 				int time = Integer.parseInt(timeField.getText());
-				Display.excTrk.addExercise(bpm, time);
-				Display.populateWorkoutField();
-				//JOptionPane.showMessageDialog(this, "Workout added.");
-				this.dispose();
+				if (bpm >= 60 && bpm <= 220)
+				{
+					Display.excTrk.addExercise(bpm, time);
+					Display.populateWorkoutField();
+					this.dispose();
+				}
+				else JOptionPane.showMessageDialog(this, "Unsafe heart rate, go see a doctor.");
 			}
 			catch (Exception ex)
 			{
