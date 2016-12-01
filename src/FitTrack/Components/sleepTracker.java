@@ -3,19 +3,21 @@ package FitTrack.Components;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+
 /**
  * Created by colin on 02/11/16.
  */
 public class sleepTracker
 {
-	private ArrayList<sleep> sleepHistory;
+	private static ArrayList<sleep> sleepHistory;
 
 	public sleepTracker ()
 	{
 		sleepHistory = new ArrayList<sleep>();
 	}
 
-	public ArrayList<sleep> getSleepHistory()
+	public static ArrayList<sleep> getSleepHistory()
 	{
 		return sleepHistory;
 	}
@@ -28,7 +30,9 @@ public class sleepTracker
 	public void addSleepHistory(int hours)
 	{
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-		sleep sleepData = new sleep(df , hours);
+		Date date = new Date();
+		String dfStr = df.format(date);
+		sleep sleepData = new sleep(dfStr , hours);
 		sleepHistory.add(sleepData);
 	}
 

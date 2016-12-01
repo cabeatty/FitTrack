@@ -4,6 +4,7 @@
 
 package FitTrack.Main.guiMain.Components;
 
+import FitTrack.Data.sleepDb;
 import FitTrack.Main.guiMain.Utilities.fieldChecks;
 
 import java.awt.*;
@@ -31,10 +32,8 @@ public class addSleep extends JFrame
 			try
 			{
 				Display.sleepTrk.addSleepHistory(Integer.parseInt(sleepField.getText()));
-				//JOptionPane.showMessageDialog(this, "Added sleep.");
 				this.dispose();
 				Display.populateSleepField();
-				System.out.println(Display.sleepTrk.toString());
 			}
 			catch (Exception exc)
 			{

@@ -54,6 +54,7 @@ public class createAcc extends JFrame
 							{
 								JOptionPane.showMessageDialog(this, "Account " + uNameField.getText() + " created!");
 								Display.usr = tempUser;
+								Display.NEWUSER = true;
 								Display.LOGGEDINFLAG = true;
 								Display.updateLoginStatus();
 								this.dispose();

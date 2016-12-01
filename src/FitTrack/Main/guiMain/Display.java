@@ -5,17 +5,15 @@
 package FitTrack.Main.guiMain;
 
 import FitTrack.Components.*;
+import FitTrack.Data.sleepDb;
 import FitTrack.Main.guiMain.Components.*;
 import FitTrack.Main.guiMain.Utilities.fieldChecks;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
-//import java.util.HashMap;
-//TODO work on database shit
 import javax.swing.*;
 import javax.swing.GroupLayout;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * @author Colin Beatty
@@ -24,12 +22,12 @@ public class Display extends JFrame
 {
 	public static User usr;
 
+	public static boolean NEWUSER = false;
 	public static boolean LOGGEDINFLAG = false;
 	public static waterIntakeTracker waterTrk = new waterIntakeTracker();
 	public static sleepTracker sleepTrk = new sleepTracker();
 	public static calorieTracker calTrk;
 	public static exerciseTracker excTrk;
-	//public static HashMap userHashMap;
 	//TODO work on database shit
 
 	public Display()
@@ -62,6 +60,7 @@ public class Display extends JFrame
 			JOptionPane.showMessageDialog(this, usr.getuName() + " logged out.");
 			LOGGEDINFLAG = false;
 			updateLoginStatus();
+			deLoadData();
 		}
 		else
 		{
@@ -92,7 +91,6 @@ public class Display extends JFrame
 			loginStatus.setText("");
 			logoutButton.setVisible(false);
 			loginButton.setVisible(true);
-			deLoadData();
 
 			//Buttons
 			addDrinkButton.setBackground(Color.RED);
@@ -131,6 +129,7 @@ public class Display extends JFrame
 	{
 		if (LOGGEDINFLAG == true)
 		{
+			waterTrk = new waterIntakeTracker();
 			JTextField[] fieldsArr = {addDrinkField};
 			if (fieldChecks.empty(fieldsArr))
 			{
@@ -270,19 +269,29 @@ public class Display extends JFrame
 
 	public static void loadData() //TODO load data into the fields from user logged in
 	{
-		if(true)  //if the loaded user has any logged data in the database
+		if(NEWUSER)  //if the user is new, dont try to load cached data that doesnt exist
 		{
 			sleepField.setText("No sleep logged, click 'Add Sleep' to get started.");
 			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
 			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
 		}
-		else System.out.println("ding");
+		else
+		{
+			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
+			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
+			sleepTrk.setSleepHistory(sleepDb.loadSleep());
+			populateSleepField();
+		}
 	}
-	public static void deLoadData() //TODO make this cache the logged data (this is called when the user logs out)
+	public static void deLoadData()
 	{
 		sleepField.setText("Not logged in, go to the home tab and login to get started.");
 		workoutField.setText("Not logged in, go to the home tab and login to get started.");
 		mealsField.setText("Not logged in, go to the home tab and login to get started.");
+		drankField.setText("0");
+		leftField.setText("64");
+		sleepDb.saveSleep();
+
 	}
 
 	//-----------------JForm shit---------------------------------------

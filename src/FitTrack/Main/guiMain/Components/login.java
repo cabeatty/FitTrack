@@ -37,8 +37,8 @@ public class login extends JFrame
 			{
 				Display.usr = ent;
 				Display.LOGGEDINFLAG = true;
+				Display.NEWUSER = false;
 				Display.updateLoginStatus();
-				JOptionPane.showMessageDialog(this, uName + " logged in.");
 				this.dispose();
 			}
 			else
