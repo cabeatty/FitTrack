@@ -14,6 +14,21 @@ public class sleep
 		this.hours = hours;
 	}
 
+	public String getDf()
+	{
+		return df;
+	}
+
+	public int getHours()
+	{
+		return hours;
+	}
+
+	public void setHours(int hours)
+	{
+		this.hours = hours;
+	}
+
 	@Override
 	public String toString()
 	{

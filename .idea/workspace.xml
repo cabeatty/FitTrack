@@ -2,9 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e28fe423-7ed4-44c0-9599-5d141ec91743" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Main/Boot.java" afterPath="$PROJECT_DIR$/src/FitTrack/Main/Boot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepGraph.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/sleepMapper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/sleepMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/sleepMapper.jfd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/resources/manp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/resources/manp2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepMapper.jfd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/manp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/manp2.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Components/sleep.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Components/sleep.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Components/sleepTracker.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Components/sleepTracker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/addSleep$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/addSleep$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/addSleep$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/addSleep$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/addSleep.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/addSleep.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$3.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$4.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$5.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$6.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$7.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$8.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitTrack.iml" afterPath="$PROJECT_DIR$/FitTrack.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Components/sleep.java" afterPath="$PROJECT_DIR$/src/FitTrack/Components/sleep.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java" afterPath="$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java" afterPath="$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addSleep.java" afterPath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addSleep.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java" afterPath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/users.txt" afterPath="$PROJECT_DIR$/src/resources/users.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/cabeattysleep.txt" afterPath="$PROJECT_DIR$/src/resources/cabeattysleep.txt" />
     </list>
     <ignored path="FitTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,38 +58,48 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="235" column="59" selection-start-line="235" selection-start-column="59" selection-end-line="235" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Boot.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Boot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/Boot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="195">
               <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sleepDb.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java">
+      <file leaf-file-name="sleepTracker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="675">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/users.txt">
+      <file leaf-file-name="sleepGraph.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="389">
+              <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sleep.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -69,47 +108,11 @@
       <file leaf-file-name="addSleep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addSleep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="150">
+              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
               <folding>
-                <marker date="1480550119170" expanded="false" signature="1076:3441" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1480550119170" expanded="false" signature="3447:3783" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createAcc.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
-              <folding>
-                <marker date="1480549703134" expanded="false" signature="2459:9257" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1480549703134" expanded="false" signature="9263:10119" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loadUserData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/loadUserData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-              <folding>
-                <marker date="1480549703250" expanded="false" signature="1278:4079" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1480549703250" expanded="false" signature="4085:4487" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                <marker date="1480616894814" expanded="false" signature="1416:3781" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1480616894814" expanded="false" signature="3787:4123" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
               </folding>
             </state>
           </provider>
@@ -136,8 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FitTrack/User.java" />
-        <option value="$PROJECT_DIR$/src/JForm/disp.jfd" />
         <option value="$PROJECT_DIR$/src/JForm/disp.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/Disp.java" />
         <option value="$PROJECT_DIR$/src/jFrame/Display.jfd" />
@@ -176,16 +177,19 @@
         <option value="$PROJECT_DIR$/src/FitTrack/Components/User.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Data/loadUserData.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addWorkout.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Components/sleep.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Data/loadData.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/login.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addSleep.java" />
         <option value="$PROJECT_DIR$/src/resources/users.txt" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/Boot.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Utilities/getDate.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Components/sleep.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addSleep.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java" />
+        <option value="$PROJECT_DIR$/src/resources/cabeattysleep.txt" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepGraph.java" />
       </list>
     </option>
   </component>
@@ -243,6 +247,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,36 +373,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FitTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guiMain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -440,17 +416,19 @@
               <option name="myItemId" value="FitTrack" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CSE 280/client_player" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resources/jcommon-1.0.23.jar!/" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -532,6 +510,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="FitTrack.Data.loadUserData" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="FitTrack" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sleepGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="FitTrack.Main.guiMain.Components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="FitTrack.Main.guiMain.Components.sleepGraph" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -958,18 +956,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.disp" />
       <item index="1" class="java.lang.String" itemvalue="Application.Boot" />
       <item index="2" class="java.lang.String" itemvalue="Application.login" />
       <item index="3" class="java.lang.String" itemvalue="Application.loadUserData" />
+      <item index="4" class="java.lang.String" itemvalue="Application.sleepGraph" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Boot" />
-        <item index="1" class="java.lang.String" itemvalue="Application.loadUserData" />
-        <item index="2" class="java.lang.String" itemvalue="Application.login" />
-        <item index="3" class="java.lang.String" itemvalue="Application.disp" />
+        <item index="1" class="java.lang.String" itemvalue="Application.sleepGraph" />
+        <item index="2" class="java.lang.String" itemvalue="Application.loadUserData" />
+        <item index="3" class="java.lang.String" itemvalue="Application.login" />
+        <item index="4" class="java.lang.String" itemvalue="Application.disp" />
       </list>
     </recent_temporary>
   </component>
@@ -1025,6 +1025,7 @@
       <workItem from="1480537430837" duration="2130000" />
       <workItem from="1480545157087" duration="5637000" />
       <workItem from="1480559375896" duration="2824000" />
+      <workItem from="1480610645034" duration="6272000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;">
       <created>1478656119355</created>
@@ -1079,7 +1080,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104696000" />
+    <option name="totallyTimeSpent" value="110968000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1101,8 +1102,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14854518" sideWeight="0.50818396" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27871364" sideWeight="0.49181604" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27871364" sideWeight="0.49181604" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1122,6 +1123,35 @@
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JFormDesigner Error Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14854518" sideWeight="0.50818396" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771823" sideWeight="0.497272" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27871364" sideWeight="0.49181604" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13873734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1151,14 +1181,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/JForm/disp.java" />
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/waterIntakeTracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1261,13 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -1286,13 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/exerciseTracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -1301,13 +1309,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrame/main/Display.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Utilities/create.java">
@@ -1329,22 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -1352,17 +1344,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/loadUserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/resources/HankHillsleep.txt" />
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepMapper.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
+        <state relative-caret-position="571">
           <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
           <folding>
             <marker date="1480549703134" expanded="false" signature="2459:9257" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -1371,21 +1361,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/HankHillsleep.txt" />
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addSleep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <marker date="1480550119170" expanded="false" signature="1076:3441" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1480550119170" expanded="false" signature="3447:3783" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state relative-caret-position="571">
           <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
           <folding>
             <marker date="1480549703250" expanded="false" signature="1278:4079" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -1394,15 +1372,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepMapper.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/cabeattysleep.txt">
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Utilities/getDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1415,26 +1396,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java">
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/loadUserData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        <state relative-caret-position="360">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
+        <state relative-caret-position="147">
+          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/Boot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="195">
           <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/cabeattysleep.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addSleep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+          <folding>
+            <marker date="1480616894814" expanded="false" signature="1416:3781" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1480616894814" expanded="false" signature="3787:4123" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="235" column="59" selection-start-line="235" selection-start-column="59" selection-end-line="235" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
           <folding />
         </state>
       </provider>

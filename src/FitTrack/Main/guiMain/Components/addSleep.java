@@ -4,6 +4,7 @@
 
 package FitTrack.Main.guiMain.Components;
 
+import FitTrack.Components.sleep;
 import FitTrack.Data.sleepDb;
 import FitTrack.Main.guiMain.Utilities.fieldChecks;
 
@@ -12,6 +13,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.GroupLayout;
 import FitTrack.Main.guiMain.Display;
+import FitTrack.Main.guiMain.Utilities.getDate;
 
 /**
  * @author Colin Beatty
@@ -31,9 +33,19 @@ public class addSleep extends JFrame
 		{
 			try
 			{
-				Display.sleepTrk.addSleepHistory(Integer.parseInt(sleepField.getText()));
-				this.dispose();
-				Display.populateSleepField();
+				int hours = Integer.parseInt(sleepField.getText());
+				sleep ipSlp = new sleep(getDate.getTodaysDate(), hours);
+
+				if (!Display.sleepTrk.tooManyHours(ipSlp))
+				{
+					Display.sleepTrk.addSleepHistory(ipSlp);
+					this.dispose();
+					Display.populateSleepField();
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(this, "You can't sleep more than 24 hours in a day.");
+				}
 			}
 			catch (Exception exc)
 			{

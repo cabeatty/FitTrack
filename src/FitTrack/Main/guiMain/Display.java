@@ -8,6 +8,7 @@ import FitTrack.Components.*;
 import FitTrack.Data.sleepDb;
 import FitTrack.Main.guiMain.Components.*;
 import FitTrack.Main.guiMain.Utilities.fieldChecks;
+import org.jfree.ui.RefineryUtilities;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -91,6 +92,11 @@ public class Display extends JFrame
 			loginStatus.setText("");
 			logoutButton.setVisible(false);
 			loginButton.setVisible(true);
+
+			//Display boxes
+			sleepField.setText("Not logged in, go to the home tab and login to get started.");
+			workoutField.setText("Not logged in, go to the home tab and login to get started.");
+			mealsField.setText("Not logged in, go to the home tab and login to get started.");
 
 			//Buttons
 			addDrinkButton.setBackground(Color.RED);
@@ -222,11 +228,12 @@ public class Display extends JFrame
 	{
 		if (LOGGEDINFLAG == true)
 		{
-			usr.print();
-			sleepMapper slpMap = new sleepMapper();
-			slpMap.setLocationRelativeTo(this);
-			slpMap.setVisible(true);
-			slpMap.setResizable(false);
+			sleepGraph chart = new sleepGraph("Sleep Day to Day" , "Hours Slept Per Day", sleepTrk.getSleepHistory());
+			chart.pack( );
+			RefineryUtilities.centerFrameOnScreen( chart );
+			chart.setVisible( true );
+			chart.setFocusable( true );
+			chart.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 
@@ -285,13 +292,9 @@ public class Display extends JFrame
 	}
 	public static void deLoadData()
 	{
-		sleepField.setText("Not logged in, go to the home tab and login to get started.");
-		workoutField.setText("Not logged in, go to the home tab and login to get started.");
-		mealsField.setText("Not logged in, go to the home tab and login to get started.");
 		drankField.setText("0");
 		leftField.setText("64");
 		sleepDb.saveSleep();
-
 	}
 
 	//-----------------JForm shit---------------------------------------

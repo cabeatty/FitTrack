@@ -51,7 +51,7 @@ public class sleepDb
 			while( ( temp = reader.readLine() ) != null)
 			{
 				String[] data = temp.split(" ");
-				sleep slp = new sleep(data[0], Integer.parseInt(data[2]));
+				sleep slp = new sleep(data[0],Integer.parseInt(data[2]));
 				tempSlp.add(slp);
 			}
 			reader.close();
