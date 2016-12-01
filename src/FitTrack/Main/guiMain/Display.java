@@ -347,6 +347,8 @@ public class Display extends JFrame
 		setTitle("FitTrack");
 		Container contentPane = getContentPane();
 
+		setIconImage(new ImageIcon("src/resources/pep.png").getImage());
+
 		//======== tabbedPane1 ========
 		{
 
