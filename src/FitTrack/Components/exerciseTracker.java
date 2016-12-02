@@ -15,6 +15,7 @@ public class exerciseTracker
 	private static int weight;
 	private static int age;
 	private static String gender;
+	private static double totalBurn = 0;
 
 	public exerciseTracker(User user)
 	{
@@ -27,24 +28,26 @@ public class exerciseTracker
 	public static void addExercise(int bpm, int time)
 	{
 		double calBurn;
-
-		if (gender.equalsIgnoreCase("male"))
+		if (bpm >= 60 && bpm <= 220  && time >= 0 && time <= 1440)
 		{
-			calBurn = (( age * 0.2017 ) - (weight * 0.09036) + (bpm * 0.6309) - 55.0969) * time / 4.184;
-		}
-		else
-		{
-			calBurn = ((age * 0.074) - (weight * 0.05741) + (bpm * 0.4472) - 20.4022) * time / 4.184;
-		}
+			if (gender.equalsIgnoreCase("male"))
+			{
+				calBurn = ((age * 0.2017) - (weight * 0.09036) + (bpm * 0.6309) - 55.0969) * time / 4.184;
+			}
+			else
+			{
+				calBurn = ((age * 0.074) - (weight * 0.05741) + (bpm * 0.4472) - 20.4022) * time / 4.184;
+			}
 
-		//code to round the double up to two decimal places
-		calBurn = Math.round(calBurn * 100);
-		calBurn = calBurn/100;
-
-		DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-		Date date = new Date();
-		String exercise = "Date: " + df.format(date).toString() + " | Duration: " + time + " min | Calories burnt: "  + calBurn;
-		workoutData.add(exercise);
+			//code to round the double up to two decimal places
+			calBurn = Math.round(calBurn * 100);
+			calBurn = calBurn / 100;
+			addTotalBurn(calBurn);
+			DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+			Date date = new Date();
+			String exercise = "Date: " + df.format(date).toString() + " | Duration: " + time + " min | Calories burnt: " + calBurn;
+			workoutData.add(exercise);
+		}
 	}
 
 	public static ArrayList<String> getWorkoutData()
@@ -55,6 +58,21 @@ public class exerciseTracker
 	public static void setWorkoutHistory(ArrayList<String> ipArr)
 	{
 		workoutData = ipArr;
+	}
+
+	public static double getTotalBurn()
+	{
+		return totalBurn;
+	}
+
+	public static void addTotalBurn(double val)
+	{
+		totalBurn = totalBurn + val;
+	}
+
+	public static void setTotalBurn(double val)
+	{
+		totalBurn = val;
 	}
 
 	@Override

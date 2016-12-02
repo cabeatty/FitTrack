@@ -101,11 +101,19 @@ public class calorieTracker
 
 	public static void addMeal(double cal)
 	{
-		calories += cal;
-		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
-		Date date = new Date();
-		String mealData = "Date: " + df.format(date).toString() + " | Calories eaten: " + cal;
-		meals.add(mealData);
+		if( cal >= 0 && cal <= 3500)
+		{
+			calories += cal;
+			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+			Date date = new Date();
+			String mealData = "Date: " + df.format(date).toString() + " | Calories eaten: " + cal;
+			meals.add(mealData);
+		}
+	}
+
+	public static void restCal()  //For testing only, to keep everything uniform;
+	{
+		calories = 0;
 	}
 
 	public static ArrayList<String> getMealHistory()
