@@ -36,6 +36,26 @@ public class calorieTracker
 		gender = usr.getSex();
 	}
 
+	public static void setTodaysCal()
+	{
+		DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+		Date date = new Date();
+		String todaysDate = df.format(date);
+
+		for (String st : meals)
+		{
+			String[] tempSp = st.split(" ");
+			System.out.println("Todays date: " + todaysDate);
+			System.out.println("Loaded date: " + tempSp[1]);
+
+			if( tempSp[1].equals(todaysDate) )
+			{
+				System.out.println("Loaded calo: " + Double.parseDouble(tempSp[6]));
+				calories = calories + Double.parseDouble( tempSp[6] );
+			}
+		}
+	}
+
 	public static String getTotal()
 	{
 		double rCal = calories;
@@ -88,9 +108,14 @@ public class calorieTracker
 		meals.add(mealData);
 	}
 
-	public static ArrayList<String> getMeals()
+	public static ArrayList<String> getMealHistory()
 	{
 		return meals;
+	}
+
+	public static void setMealHistory(ArrayList<String> mealHistory)
+	{
+		meals = mealHistory;
 	}
 
 	@Override

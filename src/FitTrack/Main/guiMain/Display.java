@@ -5,6 +5,7 @@
 package FitTrack.Main.guiMain;
 
 import FitTrack.Components.*;
+import FitTrack.Data.calorieDb;
 import FitTrack.Data.sleepDb;
 import FitTrack.Data.workoutDb;
 import FitTrack.Main.guiMain.Components.*;
@@ -114,10 +115,10 @@ public class Display extends JFrame
 			loginButton.setVisible(false);
 			calTrk = new calorieTracker(usr);
 			excTrk = new exerciseTracker(usr);
+			loadData();
 			diffCalField.setText(calTrk.getDiff());
 			totalCalField.setText(calTrk.getTotal());
 			targetCalField.setText(calTrk.getTarget());
-			loadData();
 
 			//Buttons
 
@@ -146,8 +147,11 @@ public class Display extends JFrame
 			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
 			sleepTrk.setSleepHistory(sleepDb.loadSleep());
 			excTrk.setWorkoutHistory(workoutDb.loadWorkout());
+			calTrk.setMealHistory(calorieDb.loadMeals());
+			calTrk.setTodaysCal();
 			populateSleepField();
 			populateWorkoutField();
+			populateMealField();
 		}
 	}
 	public static void deLoadData()
@@ -156,6 +160,7 @@ public class Display extends JFrame
 		leftField.setText("64");
 		sleepDb.saveSleep();
 		workoutDb.saveWorkout();
+		calorieDb.saveMeals();
 	}
 
 	//-----------------Water intake tracker---------------------------------------
@@ -284,7 +289,7 @@ public class Display extends JFrame
 	}
 	public static void populateMealField()
 	{
-		ArrayList<String> mls = calTrk.getMeals();
+		ArrayList<String> mls = calTrk.getMealHistory();
 
 		if (mls.isEmpty())
 		{
@@ -354,7 +359,7 @@ public class Display extends JFrame
 		setTitle("FitTrack");
 		Container contentPane = getContentPane();
 
-		setIconImage(new ImageIcon("src/resources/pep.png").getImage());
+		setIconImage(new ImageIcon("src/resources/man.png").getImage());
 
 		//======== tabbedPane1 ========
 		{

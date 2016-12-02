@@ -2,42 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e28fe423-7ed4-44c0-9599-5d141ec91743" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Calories/addMeal.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Display.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Exersize/addWorkout.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Home/createAcc/createAcc.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Home/login/login.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FitTrack/jFrame/main/Sleep/addSleep.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/main/Calories/addMeal.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/main/Display.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/main/Display.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/main/Exersize/addWorkout.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/main/Home/createAcc/createAcc.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/main/Home/login/login.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jFrame/main/Sleep/addSleep.jfd" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Data/loadUserData.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Data/loadUserData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Components/calorieTracker.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Components/calorieTracker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/createAcc$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/createAcc$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/createAcc$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/createAcc$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/createAcc.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Components/createAcc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$1.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$2.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$3.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$4.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$5.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$6.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$7.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$8.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display.class" afterPath="$PROJECT_DIR$/out/production/FitTrack/FitTrack/Main/guiMain/Display.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FitTrack/resources/users.txt" afterPath="$PROJECT_DIR$/out/production/FitTrack/resources/users.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Data/loadUserData.java" afterPath="$PROJECT_DIR$/src/FitTrack/Data/loadUserData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java" afterPath="$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Data/workoutDb.java" afterPath="$PROJECT_DIR$/src/FitTrack/Data/workoutDb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/cabeattyworkout.txt" afterPath="$PROJECT_DIR$/src/resources/cabeattyworkout.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Components/calorieTracker.java" afterPath="$PROJECT_DIR$/src/FitTrack/Components/calorieTracker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Data/calorieDb.java" afterPath="$PROJECT_DIR$/src/FitTrack/Data/calorieDb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java" afterPath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java" afterPath="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/jnguyensleep.txt" afterPath="$PROJECT_DIR$/src/resources/jnguyensleep.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/jnguyenworkout.txt" afterPath="$PROJECT_DIR$/src/resources/jnguyenworkout.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/users.txt" afterPath="$PROJECT_DIR$/src/resources/users.txt" />
     </list>
     <ignored path="FitTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
-              <caret line="156" column="22" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
+            <state relative-caret-position="405">
+              <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -72,8 +55,8 @@
       <file leaf-file-name="Boot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/Boot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="225">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -82,7 +65,7 @@
       <file leaf-file-name="sleepTracker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
+            <state relative-caret-position="675">
               <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
@@ -92,7 +75,7 @@
       <file leaf-file-name="exerciseTracker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/exerciseTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
+            <state relative-caret-position="555">
               <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding />
             </state>
@@ -102,21 +85,54 @@
       <file leaf-file-name="workoutDb.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/workoutDb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="436">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createAcc.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="calorieDb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/calorieDb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calorieTracker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/calorieTracker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createAcc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+            <state relative-caret-position="316">
+              <caret line="57" column="109" selection-start-line="57" selection-start-column="109" selection-end-line="57" selection-end-column="109" />
               <folding>
-                <marker date="1480701833330" expanded="false" signature="2480:9278" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1480701833330" expanded="false" signature="9284:10140" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                <marker date="1480704777106" expanded="false" signature="2752:9550" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1480704777106" expanded="false" signature="9556:10412" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+              <folding>
+                <marker date="1480705542562" expanded="false" signature="1278:4079" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1480705542562" expanded="false" signature="4085:4487" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
               </folding>
             </state>
           </provider>
@@ -143,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/jFrame/Display.jfd" />
         <option value="$PROJECT_DIR$/src/jFrame/Display.java" />
         <option value="$PROJECT_DIR$/src/jFrame/login/login.jfd" />
         <option value="$PROJECT_DIR$/src/jFrame/Utilities/changed.java" />
@@ -165,7 +180,6 @@
         <option value="$PROJECT_DIR$/src/FitTrack/Components/exersizeTracker.java" />
         <option value="$PROJECT_DIR$/src/jFrame/main/Exersize/addWorkout.java" />
         <option value="$PROJECT_DIR$/src/jFrame/main/Home/login/login.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Components/calorieTracker.java" />
         <option value="$PROJECT_DIR$/src/jFrame/main/Calories/addMeal.java" />
         <option value="$PROJECT_DIR$/src/jFrame/main/Sleep/addSleep.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Utilities/fieldChecks.java" />
@@ -178,22 +192,24 @@
         <option value="$PROJECT_DIR$/src/FitTrack/Components/User.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addWorkout.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Data/loadData.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/login.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Main/Boot.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Utilities/getDate.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Components/sleep.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/addSleep.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepGraph.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Components/exerciseTracker.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java" />
-        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java" />
         <option value="$PROJECT_DIR$/src/FitTrack/Data/loadUserData.java" />
         <option value="$PROJECT_DIR$/src/resources/users.txt" />
         <option value="$PROJECT_DIR$/src/resources/cabeattysleep.txt" />
         <option value="$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java" />
-        <option value="$PROJECT_DIR$/src/resources/jnguyensleep.txt" />
         <option value="$PROJECT_DIR$/src/FitTrack/Data/workoutDb.java" />
+        <option value="$PROJECT_DIR$/src/resources/jnguyensleep.txt" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Main/Boot.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Data/calorieDb.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/login.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java" />
+        <option value="$PROJECT_DIR$/src/FitTrack/Components/calorieTracker.java" />
       </list>
     </option>
   </component>
@@ -299,6 +315,114 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiMain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiMain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FitTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -908,7 +1032,7 @@
       <workItem from="1480545157087" duration="5637000" />
       <workItem from="1480559375896" duration="2824000" />
       <workItem from="1480610645034" duration="6734000" />
-      <workItem from="1480698475862" duration="4701000" />
+      <workItem from="1480698475862" duration="7194000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;changed path to man2.png to the classpath rather than the local filesystem&quot;">
       <created>1478656119355</created>
@@ -963,7 +1087,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116131000" />
+    <option name="totallyTimeSpent" value="118624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -976,7 +1100,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="21" width="1325" height="747" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -986,11 +1110,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14854518" sideWeight="0.50818396" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27871364" sideWeight="0.49181604" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27871364" sideWeight="0.49181604" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13873734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13873734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1064,7 +1188,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/JForm/disp.java" />
     <entry file="file://$PROJECT_DIR$/src/JForm/disp.jfd" />
     <entry file="file://$PROJECT_DIR$/src/JForm/disp.java" />
     <entry file="file://$PROJECT_DIR$/src/jFrame/main.java" />
@@ -1115,14 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/calorieTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,17 +1305,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/HankHillsleep.txt" />
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/sleepMapper.jfd" />
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <marker date="1480549703250" expanded="false" signature="1278:4079" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1480549703250" expanded="false" signature="4085:4487" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Utilities/getDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1243,14 +1347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/calorieDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/jnguyenworkout.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1267,42 +1363,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/Boot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="156" column="22" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/sleepDb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/jnguyensleep.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1315,26 +1379,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/exerciseTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/users.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/workoutDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1347,14 +1395,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/jnguyensleep.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/createAcc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+        <state relative-caret-position="316">
+          <caret line="57" column="109" selection-start-line="57" selection-start-column="109" selection-end-line="57" selection-end-column="109" />
           <folding>
-            <marker date="1480701833330" expanded="false" signature="2480:9278" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1480701833330" expanded="false" signature="9284:10140" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1480704777106" expanded="false" signature="2752:9550" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1480704777106" expanded="false" signature="9556:10412" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/cabeattymeals.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/calorieDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Components/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding>
+            <marker date="1480705542562" expanded="false" signature="1278:4079" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1480705542562" expanded="false" signature="4085:4487" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/exerciseTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Data/workoutDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/calorieTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Components/sleepTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/Boot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitTrack/Main/guiMain/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
