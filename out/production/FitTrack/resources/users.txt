@@ -1,4 +1,2 @@
-cabeatty Male 21 175 5.11 cabeatty@oakland.edu admin 
-Cole Male 21 190 6.1 email@email.com password 
-HankHill Male 50 220 6.04 @ bobbyHill 
-``
+cabeatty Male 21 175 5.11 cabeatty@oakland.edu admin
+jnguyen Female 20 130 5.04 @ asdfghjkl

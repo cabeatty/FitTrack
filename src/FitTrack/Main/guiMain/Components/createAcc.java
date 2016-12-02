@@ -9,6 +9,7 @@ package FitTrack.Main.guiMain.Components;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
 import javax.swing.*;
 import javax.swing.GroupLayout;
 

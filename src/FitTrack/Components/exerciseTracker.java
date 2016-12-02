@@ -52,6 +52,11 @@ public class exerciseTracker
 		return workoutData;
 	}
 
+	public static void setWorkoutHistory(ArrayList<String> ipArr)
+	{
+		workoutData = ipArr;
+	}
+
 	@Override
 	public String toString()
 	{

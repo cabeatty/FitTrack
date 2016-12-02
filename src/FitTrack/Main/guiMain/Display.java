@@ -6,6 +6,7 @@ package FitTrack.Main.guiMain;
 
 import FitTrack.Components.*;
 import FitTrack.Data.sleepDb;
+import FitTrack.Data.workoutDb;
 import FitTrack.Main.guiMain.Components.*;
 import FitTrack.Main.guiMain.Utilities.fieldChecks;
 import org.jfree.ui.RefineryUtilities;
@@ -127,6 +128,34 @@ public class Display extends JFrame
 			mapButton.setBackground(null);
 
 		}
+	}
+
+	//TODO-------------Load & De-Load data and display------------------
+
+	public static void loadData() //TODO load data into the fields from user logged in
+	{
+		if(NEWUSER)  //if the user is new, dont try to load cached data that doesnt exist
+		{
+			sleepField.setText("No sleep logged, click 'Add Sleep' to get started.");
+			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
+			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
+		}
+		else
+		{
+			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
+			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
+			sleepTrk.setSleepHistory(sleepDb.loadSleep());
+			excTrk.setWorkoutHistory(workoutDb.loadWorkout());
+			populateSleepField();
+			populateWorkoutField();
+		}
+	}
+	public static void deLoadData()
+	{
+		drankField.setText("0");
+		leftField.setText("64");
+		sleepDb.saveSleep();
+		workoutDb.saveWorkout();
 	}
 
 	//-----------------Water intake tracker---------------------------------------
@@ -270,31 +299,6 @@ public class Display extends JFrame
 			diffCalField.setText(calTrk.getDiff());
 
 		}
-	}
-
-	//TODO-------------Load & De-Load data and display------------------
-
-	public static void loadData() //TODO load data into the fields from user logged in
-	{
-		if(NEWUSER)  //if the user is new, dont try to load cached data that doesnt exist
-		{
-			sleepField.setText("No sleep logged, click 'Add Sleep' to get started.");
-			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
-			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
-		}
-		else
-		{
-			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
-			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
-			sleepTrk.setSleepHistory(sleepDb.loadSleep());
-			populateSleepField();
-		}
-	}
-	public static void deLoadData()
-	{
-		drankField.setText("0");
-		leftField.setText("64");
-		sleepDb.saveSleep();
 	}
 
 	//-----------------JForm shit---------------------------------------

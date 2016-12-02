@@ -27,7 +27,7 @@ public class sleepDb
 		{
 			writer = new BufferedWriter(new FileWriter("src/resources/" + usr.getuName() + "sleep.txt"));
 			String data = "";
-			sleepData = sleepTracker.getSleepHistory();
+			sleepData = Display.sleepTrk.getSleepHistory();
 			for (sleep sl : sleepData)
 			{
 				data += sl.toString() + "\n";
