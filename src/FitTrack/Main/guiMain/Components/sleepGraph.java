@@ -32,6 +32,7 @@ public class sleepGraph extends JFrame
 		int ratx = (int)(560*1.5);
 		chartPanel.setPreferredSize( new java.awt.Dimension( ratx , raty ) );
 		setContentPane( chartPanel );
+		this.setLookAndFeel();
 	}
 	private DefaultCategoryDataset createDataset( )
 	{
@@ -43,5 +44,13 @@ public class sleepGraph extends JFrame
 			dataset.addValue(slp.getHours(), "hours", dt);
 		}
 		return dataset;
+	}
+
+	private static void setLookAndFeel() {
+		try {
+			UIManager.setLookAndFeel("com.jtattoo.plaf.hifi.HiFiLookAndFeel");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
