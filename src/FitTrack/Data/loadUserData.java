@@ -22,6 +22,7 @@ public class loadUserData
 	{
 		try
 		{
+			userData.clear();
 			reader = new BufferedReader(new FileReader("src/resources/users.txt"));
 			String temp;
 			while( ( temp = reader.readLine() ) != null)

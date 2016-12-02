@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class workoutDb
 {
-	private static User usr = Display.usr;
+	private static User usr;
 	public static BufferedWriter writer;
 	public static BufferedReader reader;
 	public static ArrayList<String> workoutData = new ArrayList<String>();
@@ -23,6 +23,8 @@ public class workoutDb
 	{
 		try
 		{
+			usr = Display.usr;
+			workoutData.clear();
 			writer = new BufferedWriter(new FileWriter("src/resources/" + usr.getuName() + "workout.txt"));
 			String data = "";
 			workoutData = Display.excTrk.getWorkoutData();
@@ -41,6 +43,7 @@ public class workoutDb
 
 	public static ArrayList<String> loadWorkout()
 	{
+		usr = Display.usr;
 		ArrayList<String> tempWout = new ArrayList<String>();
 		try
 		{

@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class sleepDb
 {
-	private static User usr = Display.usr;
+	private static User usr;
 	public static BufferedWriter writer;
 	public static BufferedReader reader;
 	public static ArrayList<sleep> sleepData = new ArrayList<sleep>();
@@ -25,6 +25,8 @@ public class sleepDb
 	{
 		try
 		{
+			usr = Display.usr;
+			sleepData.clear();
 			writer = new BufferedWriter(new FileWriter("src/resources/" + usr.getuName() + "sleep.txt"));
 			String data = "";
 			sleepData = Display.sleepTrk.getSleepHistory();
@@ -44,6 +46,7 @@ public class sleepDb
 	public static ArrayList<sleep> loadSleep()
 	{
 		ArrayList<sleep> tempSlp = new ArrayList<sleep>();
+		usr = Display.usr;
 		try
 		{
 			reader = new BufferedReader(new FileReader("src/resources/" + usr.getuName() + "sleep.txt"));
