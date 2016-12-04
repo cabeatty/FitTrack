@@ -45,12 +45,9 @@ public class calorieTracker
 		for (String st : meals)
 		{
 			String[] tempSp = st.split(" ");
-			System.out.println("Todays date: " + todaysDate);
-			System.out.println("Loaded date: " + tempSp[1]);
-
 			if( tempSp[1].equals(todaysDate) )
 			{
-				System.out.println("Loaded calo: " + Double.parseDouble(tempSp[6]));
+				System.out.println("Loaded meal: " + st);
 				calories = calories + Double.parseDouble( tempSp[6] );
 			}
 		}
@@ -111,7 +108,7 @@ public class calorieTracker
 		}
 	}
 
-	public static void restCal()  //For testing only, to keep everything uniform;
+	public static void restCal()  //For testing only
 	{
 		calories = 0;
 	}

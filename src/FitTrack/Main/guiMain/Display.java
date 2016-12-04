@@ -27,7 +27,7 @@ public class Display extends JFrame
 
 	public static boolean NEWUSER = false;
 	public static boolean LOGGEDINFLAG = false;
-	public static waterIntakeTracker waterTrk = new waterIntakeTracker();
+	public static waterIntakeTracker waterTrk;
 	public static sleepTracker sleepTrk = new sleepTracker();
 	public static calorieTracker calTrk;
 	public static exerciseTracker excTrk;
@@ -99,6 +99,9 @@ public class Display extends JFrame
 			sleepField.setText("Not logged in, go to the home tab and login to get started.");
 			workoutField.setText("Not logged in, go to the home tab and login to get started.");
 			mealsField.setText("Not logged in, go to the home tab and login to get started.");
+			checkDrinkGoal();
+			drankField.setText("0");
+			leftField.setText("64");
 
 			//Buttons
 			addDrinkButton.setBackground(Color.RED);
@@ -116,6 +119,7 @@ public class Display extends JFrame
 			calTrk = new calorieTracker(usr);
 			excTrk = new exerciseTracker(usr);
 			loadData();
+			checkDrinkGoal();
 			diffCalField.setText(calTrk.getDiff());
 			totalCalField.setText(calTrk.getTotal());
 			targetCalField.setText(calTrk.getTarget());
@@ -131,18 +135,20 @@ public class Display extends JFrame
 		}
 	}
 
-	//TODO-------------Load & De-Load data and display------------------
+	//-------------Load & De-Load data and display-------------------------------
 
-	public static void loadData() //TODO load data into the fields from user logged in
+	public static void loadData()
 	{
 		if(NEWUSER)  //if the user is new, dont try to load cached data that doesnt exist
 		{
 			sleepField.setText("No sleep logged, click 'Add Sleep' to get started.");
 			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
 			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
+			waterTrk = new waterIntakeTracker();
 		}
 		else
 		{
+			waterTrk = new waterIntakeTracker();
 			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
 			mealsField.setText("No meals logged, click 'Add Meal' to get started.");
 			sleepTrk.setSleepHistory(sleepDb.loadSleep());
@@ -156,8 +162,7 @@ public class Display extends JFrame
 	}
 	public static void deLoadData()
 	{
-		drankField.setText("0");
-		leftField.setText("64");
+		waterTrk = new waterIntakeTracker();
 		sleepDb.saveSleep();
 		workoutDb.saveWorkout();
 		calorieDb.saveMeals();
@@ -169,7 +174,6 @@ public class Display extends JFrame
 	{
 		if (LOGGEDINFLAG == true)
 		{
-			waterTrk = new waterIntakeTracker();
 			JTextField[] fieldsArr = {addDrinkField};
 			if (fieldChecks.empty(fieldsArr))
 			{
@@ -180,12 +184,7 @@ public class Display extends JFrame
 					drankField.setText(waterTrk.getTotal());
 					leftField.setText(waterTrk.getRemaining());
 					addDrinkField.setText("");
-
-					if(waterTrk.getRemainingInt() <= 0)
-					{
-						JOptionPane.showMessageDialog(this, "Goal met.");
-					}
-
+					checkDrinkGoal();
 				}
 				catch (Exception drinkEx)
 				{
@@ -200,6 +199,28 @@ public class Display extends JFrame
 		{
 			JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 			addDrinkField.setText("");
+		}
+	}
+	public static void checkDrinkGoal()
+	{
+		if(waterTrk.getRemainingInt() <= 0)
+		{
+			drankField.setForeground(Color.GREEN);
+			leftField.setForeground(Color.GREEN);
+			goalField.setForeground(Color.GREEN);
+		}
+		else
+		{
+			drankField.setForeground(null);
+			leftField.setForeground(null);
+			goalField.setForeground(null);
+		}
+
+		if (!LOGGEDINFLAG)
+		{
+			drankField.setForeground(null);
+			leftField.setForeground(null);
+			goalField.setForeground(null);
 		}
 	}
 
@@ -547,7 +568,7 @@ public class Display extends JFrame
 								.addGroup(caloriePanelLayout.createSequentialGroup()
 										.addContainerGap()
 										.addGroup(caloriePanelLayout.createParallelGroup()
-												.addComponent(mealsScrollPane, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 529, Short.MAX_VALUE)
+												.addComponent(mealsScrollPane, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 529, Short.MAX_VALUE)  //NOTE VALUE WAS ORIGINALLY 529
 												.addGroup(caloriePanelLayout.createSequentialGroup()
 														.addGroup(caloriePanelLayout.createParallelGroup()
 																.addComponent(addMealButton)
@@ -571,7 +592,7 @@ public class Display extends JFrame
 										.addContainerGap()
 										.addComponent(mealListLabel)
 										.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-										.addComponent(mealsScrollPane, GroupLayout.PREFERRED_SIZE, 124, GroupLayout.PREFERRED_SIZE)
+										.addComponent(mealsScrollPane, GroupLayout.PREFERRED_SIZE, 124, GroupLayout.PREFERRED_SIZE)  //NOTE VALUE WAS ORIGINALLY 124
 										.addGap(18, 18, 18)
 										.addGroup(caloriePanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 												.addComponent(totalCalLabel)
@@ -584,7 +605,7 @@ public class Display extends JFrame
 										.addGroup(caloriePanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 												.addComponent(diffCalLabel)
 												.addComponent(diffCalField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-										.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+										.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE) //NOTE VALUE WAS ORIGINALLY 51
 										.addComponent(addMealButton)
 										.addContainerGap())
 				);

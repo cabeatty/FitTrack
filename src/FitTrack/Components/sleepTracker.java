@@ -3,6 +3,8 @@ package FitTrack.Components;
 import FitTrack.Main.guiMain.Utilities.getDate;
 import java.util.ArrayList;
 
+import static FitTrack.Main.guiMain.Utilities.getDate.getTodaysDate;
+
 /**
  * Created by colin on 02/11/16.
  */
@@ -30,17 +32,23 @@ public class sleepTracker
 		int todaysTotal = sleepData.getHours();
 		boolean exists = false;
 
-		for (sleep slp : sleepHistory)
+		if (todaysTotal <= 24 && todaysTotal >= 0)
 		{
-			if (slp.getDf().equals(sleepData.getDf()))
+			for (sleep slp : sleepHistory)
 			{
-				exists = true;
-				slp.setHours(slp.getHours() + todaysTotal);
+				if (slp.getDf().equals(sleepData.getDf()))
+				{
+					exists = true;
+					if (slp.getHours() + todaysTotal <= 24)
+					{
+						slp.setHours(slp.getHours() + todaysTotal);
+					}
+				}
 			}
-		}
-		if(!exists)
-		{
-			sleepHistory.add(sleepData);
+			if (!exists)
+			{
+				sleepHistory.add(sleepData);
+			}
 		}
 	}
 
@@ -63,6 +71,22 @@ public class sleepTracker
 			flag = true;
 
 		return flag;
+	}
+
+	public static int getHours()
+	{
+		int total = 0;
+		for (sleep slp : sleepHistory)
+		{
+			if (slp.getDf().equals(getTodaysDate()))
+				total += slp.getHours();
+		}
+		return total;
+	}
+
+	public static void reset()
+	{
+		sleepHistory.clear();
 	}
 
 	@Override
