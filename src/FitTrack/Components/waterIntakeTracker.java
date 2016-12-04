@@ -16,8 +16,11 @@ public class waterIntakeTracker
 
 	public static void addDrink(int drink)
 	{
-		 total = total + drink;
-		 rem = rem - drink;
+		if(drink >= 0)
+		{
+			total = total + drink;
+			rem = rem - drink;
+		}
 	}
 
 	public static String getTotal()
@@ -33,5 +36,11 @@ public class waterIntakeTracker
 	public static int getRemainingInt()
 	{
 		return rem;
+	}
+
+	public static void reset()
+	{
+		total = 0;
+		rem = 64;
 	}
 }
