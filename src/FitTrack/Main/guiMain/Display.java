@@ -48,6 +48,7 @@ public class Display extends JFrame
 			lin.setLocationRelativeTo(this);
 			lin.setVisible(true);
 			lin.setResizable(false);
+			lin.setFocusable(true);
 			this.repaint();
 		}
 		else
@@ -78,6 +79,7 @@ public class Display extends JFrame
 			cat.setLocationRelativeTo(this);
 			cat.setVisible(true);
 			cat.setResizable(false);
+			cat.setFocusable(true);
 			this.revalidate();
 			this.repaint();
 		}
@@ -237,6 +239,7 @@ public class Display extends JFrame
 			wout.setLocationRelativeTo(this);
 			wout.setVisible(true);
 			wout.setResizable(false);
+			wout.setFocusable(true);
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 	}
@@ -265,6 +268,7 @@ public class Display extends JFrame
 			sw.setLocationRelativeTo(this);
 			sw.setVisible(true);
 			sw.setResizable(false);
+			sw.setFocusable(true);
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 	}
@@ -308,6 +312,7 @@ public class Display extends JFrame
 			mw.setLocationRelativeTo(this);
 			mw.setVisible(true);
 			mw.setResizable(false);
+			mw.setFocusable(true);
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 	}
