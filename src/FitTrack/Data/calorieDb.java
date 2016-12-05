@@ -3,10 +3,7 @@ package FitTrack.Data;
 import FitTrack.Components.User;
 import FitTrack.Main.guiMain.Display;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.ArrayList;
 
 /**
@@ -60,6 +57,11 @@ public class calorieDb
 			e.printStackTrace();
 		}
 		return tempMeal;
+	}
+
+	public static void reset()
+	{
+		mealData.clear();
 	}
 
 }

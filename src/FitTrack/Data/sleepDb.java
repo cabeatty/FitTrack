@@ -5,10 +5,7 @@ import FitTrack.Components.sleep;
 import FitTrack.Components.sleepTracker;
 import FitTrack.Main.guiMain.Display;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.ArrayList;
 
 /**
@@ -64,6 +61,11 @@ public class sleepDb
 			e.printStackTrace();
 		}
 		return tempSlp;
+	}
+
+	public static void reset()
+	{
+		sleepData.clear();
 	}
 
 }

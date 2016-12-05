@@ -32,7 +32,8 @@ public class sleepGraph extends JFrame
 		int ratx = (int)(560*1.5);
 		chartPanel.setPreferredSize( new java.awt.Dimension( ratx , raty ) );
 		setContentPane( chartPanel );
-		this.setLookAndFeel();
+		setLookAndFeel();
+		setIconImage(new ImageIcon("src/resources/man.png").getImage());
 	}
 	private DefaultCategoryDataset createDataset( )
 	{

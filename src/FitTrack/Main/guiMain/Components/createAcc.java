@@ -53,13 +53,11 @@ public class createAcc extends JFrame
 							tempUser = loadUserData.checkAdd(tempUser);
 							if(tempUser != null)
 							{
-								File woutFile = new File("src/resources/" + tempUser.getuName() + "workout.txt");
-								File sleepFile = new File("src/resources/" + tempUser.getuName() + "sleep.txt");
-								File exercisefile = new File("src/resources/" + tempUser.getuName() + " meals.txt");
 								JOptionPane.showMessageDialog(this, "Account " + uNameField.getText() + " created!");
 								Display.usr = tempUser;
 								Display.NEWUSER = true;
 								Display.LOGGEDINFLAG = true;
+								Display.loadData();
 								Display.updateLoginStatus();
 								this.dispose();
 							}

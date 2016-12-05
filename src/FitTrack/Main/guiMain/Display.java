@@ -139,7 +139,7 @@ public class Display extends JFrame
 
 	public static void loadData()
 	{
-		if(NEWUSER)  //if the user is new, dont try to load cached data that doesnt exist
+		if(NEWUSER)  //if the user is new, dont try to load cached data that doesn't exist
 		{
 			sleepField.setText("No sleep logged, click 'Add Sleep' to get started.");
 			workoutField.setText("No workouts logged, click 'Add Workout' to get started.");
@@ -164,8 +164,11 @@ public class Display extends JFrame
 	{
 		waterTrk = new waterIntakeTracker();
 		sleepDb.saveSleep();
+		sleepDb.reset();
 		workoutDb.saveWorkout();
+		workoutDb.reset();
 		calorieDb.saveMeals();
+		calorieDb.reset();
 	}
 
 	//-----------------Water intake tracker---------------------------------------
