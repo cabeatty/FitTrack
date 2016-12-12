@@ -48,7 +48,7 @@ public class Display extends JFrame
 			lin.setLocationRelativeTo(this);
 			lin.setVisible(true);
 			lin.setResizable(false);
-			lin.setFocusable(true);
+			lin.setAutoRequestFocus(true);
 			this.repaint();
 		}
 		else
@@ -79,7 +79,7 @@ public class Display extends JFrame
 			cat.setLocationRelativeTo(this);
 			cat.setVisible(true);
 			cat.setResizable(false);
-			cat.setFocusable(true);
+			cat.setAutoRequestFocus(true);
 			this.revalidate();
 			this.repaint();
 		}
@@ -239,7 +239,7 @@ public class Display extends JFrame
 			wout.setLocationRelativeTo(this);
 			wout.setVisible(true);
 			wout.setResizable(false);
-			wout.setFocusable(true);
+			wout.setAutoRequestFocus(true);
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 	}
@@ -268,7 +268,7 @@ public class Display extends JFrame
 			sw.setLocationRelativeTo(this);
 			sw.setVisible(true);
 			sw.setResizable(false);
-			sw.setFocusable(true);
+			sw.setAutoRequestFocus(true);
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 	}
@@ -294,7 +294,7 @@ public class Display extends JFrame
 			chart.pack( );
 			RefineryUtilities.centerFrameOnScreen( chart );
 			chart.setVisible( true );
-			chart.setFocusable( true );
+			chart.setAutoRequestFocus( true );
 			chart.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
@@ -312,7 +312,7 @@ public class Display extends JFrame
 			mw.setLocationRelativeTo(this);
 			mw.setVisible(true);
 			mw.setResizable(false);
-			mw.setFocusable(true);
+			mw.setAutoRequestFocus(true);
 		}
 		else JOptionPane.showMessageDialog(this, "Must log in to use functionality");
 	}
@@ -397,6 +397,7 @@ public class Display extends JFrame
 			{
 				//---- homeLabel ----
 				homeLabel.setText("FitTrack");
+
 				homeLabel.setFont(new Font("Ubuntu", Font.PLAIN, 48));
 
 				//---- homeSubLabel ----
@@ -541,7 +542,7 @@ public class Display extends JFrame
 				});
 
 				//---- mealListLabel ----
-				mealListLabel.setText("Todays Meals");
+				mealListLabel.setText("Logged Meals");
 
 				//======== mealsScrollPane ========
 				{
